@@ -8,10 +8,10 @@ Prerequisites:
 	* BeautifulSoup 
 	* NLTK3 
 	* Scikit-learn 
-* [https://github.com/attardi/wikiextractor][https://github.com/attardi/wikiextractor] (to clean up Wikipedia data)
-* [https://github.com/evanmiltenburg/Dutch-tagger][https://github.com/evanmiltenburg/Dutch-tagger] (POS tagger for Dutch)
-* [https://github.com/alvations/spaghetti-tagger][https://github.com/alvations/spaghetti-tagger] (POS tagger for Spanish) 
-* [https://github.com/facebookresearch/fastText][https://github.com/facebookresearch/fastText] (the machine learning library) 
+* https://github.com/attardi/wikiextractor (to clean up Wikipedia data)
+* https://github.com/evanmiltenburg/Dutch-tagger (POS tagger for Dutch)
+* https://github.com/alvations/spaghetti-tagger (POS tagger for Spanish) 
+* https://github.com/facebookresearch/fastText (the machine learning library) 
 
 What's in this package
 ==================
