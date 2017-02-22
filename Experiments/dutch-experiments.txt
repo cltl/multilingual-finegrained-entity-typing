@@ -1,0 +1,96 @@
+Stratified sampling:
+
+$ python3
+import pandas as pd
+Meta = pd.read_csv('wikinl_vectors.tsv', header=None)
+from sklearn.model_selection import train_test_split
+
+y = Meta.iloc[:,(0)]
+x = Meta.iloc[:,(1,2,3,4,5,6)]
+
+x_train, x_test, y_train, y_test = train_test_split( x, y, test_size=0.33, random_state=42)
+
+y_testdf = y_test.to_frame()
+y_traindf = y_train.to_frame()
+test = y_testdf.merge(x_test, left_index=True, right_index=True)
+train = y_traindf.merge(x_train, left_index=True, right_index=True)
+
+train.to_csv('nlwiki_train.csv')
+test.to_csv('nlwiki_test.csv')
+exit()
+
+
+cut -f2- -d"," nlwiki_train.csv | tail -n +2 > nlwiki_train.tsv
+cut -f2- -d"," nlwiki_test.csv | tail -n +2 > nlwiki_test.tsv
+
+# Just to be sure:
+cut -f2- -d"," < nlwiki_test.tsv | sed 's/^/__label__dummy ,/' > nlwiki_test_dummyval.tsv
+  
+# Run it in fasttext 
+cd fastText 
+  
+./fasttext supervised -input ../nlwiki_train.tsv -output ../nlwiki_modeld100ng2mc1ep50 -dim 100 -lr 0.1 -wordNgrams 2 -minCount 1 -bucket 10000000 -epoch 50 -thread 4
+
+./fasttext predict ../nlwiki_modeld100ng2mc1ep50.bin ../nlwiki_test_dummyval.tsv > ../nlwiki_test_predict 
+
+cut -f1 -d"," ../nlwiki_test.tsv | paste - ../nlwiki_test_predict > ../nlwiki_test_predictions ; python3 ../compute_prf.py ../nlwiki_test_predictions
+
+# Evaluate per level in the hierarchy 
+
+python extract_levels.py nlwiki_test_predictions
+
+python3 compute_prf.py nlwiki_test_predictions.l1
+python3 compute_prf.py nlwiki_test_predictions.l2
+python3 compute_prf.py nlwiki_test_predictions.l3
+
+
+## Experiments with all DBpedia classes:
+$ python3
+import pandas as pd
+Meta = pd.read_csv('wikinl_vectors_allDBpedia.tsv', header=None)
+from sklearn.model_selection import train_test_split
+
+y = Meta.iloc[:,(0)]
+x = Meta.iloc[:,(1,2,3,4,5,6)]
+
+x_train, x_test, y_train, y_test = train_test_split( x, y, test_size=0.33, random_state=42)
+
+y_testdf = y_test.to_frame()
+y_traindf = y_train.to_frame()
+test = y_testdf.merge(x_test, left_index=True, right_index=True)
+train = y_traindf.merge(x_train, left_index=True, right_index=True)
+
+train.to_csv('nlwiki_train_AllDBClass.csv')
+test.to_csv('nlwiki_test_AllDBClass.csv')
+exit()
+
+
+cut -f2- -d"," nlwiki_train_AllDBClass.csv | tail -n +2 > nlwiki_train_AllDBClass.tsv
+cut -f2- -d"," nlwiki_test_AllDBClass.csv | tail -n +2 > nlwiki_test_AllDBClass.tsv
+
+# Just to be sure:
+cut -f2- -d"," < ../nlwiki_test_AllDBClass.tsv | sed 's/^/__label__dummy ,/' > nlwiki_test_AllDBClass_dummyval.tsv
+
+# Train a model and evaluate it on the test set 
+cd fastText 
+
+./fasttext supervised -input nlwiki_train_AllDBClass.tsv -output ../nlwiki_AllDBClassmodeld100ng2mc1ep50 -dim 100 -lr 0.1 -wordNgrams 2 -minCount 10 -bucket 10000000 -epoch 50 -thread 4
+
+./fasttext predict ../nlwiki_AllDBClassmodeld100ng2mc1ep50.bin ../nlwiki_test_AllDBClass_dummyval.tsv > nlwiki_test_AllDBClass.predict 
+
+cut -f1 -d"," ../nlwiki_test_AllDBClass.tsv | paste - ../nlwiki_test_AllDBClass.predict > ../nlwiki_test_AllDBClass.predictions ; python3 ../compute_prf.py ../nlwiki_test_AllDBClass.predictions
+
+
+### Experiment with only unknown entities (/dark entities) 
+cut -f2 -d"," < nlwiki_train.tsv | sort | uniq | sed 's/^ //g' > nlwiki_entities_in_train.tsv
+python generate_darkies_test.py nlwiki_test.tsv > nlwiki_darkies_test.tsv 
+
+./fasttext predict ../nlwiki_modeld100ng2mc1ep50.bin ../nlwiki_darkies_test.tsv > ../nlwiki_darkies.pred 
+
+cut -f1 -d"," nlwiki_darkies_test.tsv | paste - nlwiki_darkies.pred > nlwiki_darkies.predictions ; python3 compute_prf.py nlwiki_darkies.predictions  
+
+
+
+
+
+  

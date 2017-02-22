@@ -1,0 +1,76 @@
+# Spanish experiments 
+# At the time of writing, the Wikipedia data wasn't 
+
+$ python3
+import pandas as pd
+Meta = pd.read_csv('spanish_intermediate.vectors', header=None)
+from sklearn.model_selection import train_test_split
+
+y = Meta.iloc[:,(0)]
+x = Meta.iloc[:,(1,2,3,4,5,6)]
+
+x_train, x_test, y_train, y_test = train_test_split( x, y, test_size=0.33, random_state=42)
+
+y_testdf = y_test.to_frame()
+y_traindf = y_train.to_frame()
+test = y_testdf.merge(x_test, left_index=True, right_index=True)
+train = y_traindf.merge(x_train, left_index=True, right_index=True)
+
+train.to_csv('spanish_intermediate_train.csv')
+test.to_csv('spanish_intermediate_test.csv')
+exit()
+
+cut -f2- -d"," spanish_intermediate_train.csv | tail -n +2 > spanish_intermediate_train.tsv
+cut -f2- -d"," spanish_intermediate_test.csv | tail -n +2 > spanish_intermediate_test.tsv
+
+# Just to be sure:
+cut -f2- -d"," < spanish_intermediate_test.tsv | sed 's/^/__label__dummy ,/' > spanish_intermediate_test_dummyval.tsv
+
+# Train the classifier 
+./fasttext supervised -input ../spanish/spanish_intermediate_test.tsv -output ../spanish_intermediate.train_model.bin -dim 100 -lr 0.1 -wordNgrams 2 -minCount 1 -bucket 10000000 -epoch 50 -thread 4
+
+# Classify the test instances  
+./fasttext predict ../spanish_intermediate.train_model.bin.bin ../spanish/spanish_intermediate_test_dummyval.tsv > ../spanish/spanish_intermediate_test.predict 
+
+cut -f1 -d"," spanish_intermediate_test.tsv | paste - spanish_intermediate_test.predict  > spanish_intermediate_test.predictions ; python3 ../compute_prf.py spanish_intermediate_test.predictions
+
+# Evaluate per level in the hierarchy 
+
+
+
+$ python3
+import pandas as pd
+Meta = pd.read_csv(' spanish_intermediate_allDB.vectors', header=None)
+from sklearn.model_selection import train_test_split
+
+y = Meta.iloc[:,(0)]
+x = Meta.iloc[:,(1,2,3,4,5,6)]
+
+x_train, x_test, y_train, y_test = train_test_split( x, y, test_size=0.33, random_state=42)
+
+y_testdf = y_test.to_frame()
+y_traindf = y_train.to_frame()
+test = y_testdf.merge(x_test, left_index=True, right_index=True)
+train = y_traindf.merge(x_train, left_index=True, right_index=True)
+
+train.to_csv('spanish_intermediateAllDB_train.csv')
+test.to_csv('spanish_intermediateAllDB_test.csv')
+exit()
+
+cut -f2- -d"," spanish_intermediateAllDB_train.csv | tail -n +2 > spanish_intermediateAllDB_train.tsv
+cut -f2- -d"," spanish_intermediateAllDB_test.csv | tail -n +2 > spanish_intermediateAllDB_test.tsv
+
+# Just to be sure:
+cut -f2- -d"," < spanish_intermediateAllDB_test.csv | sed 's/^/__label__dummy ,/' > spanish_intermediateAllDB_test_dummyval.csv
+
+# Train the classifier 
+./fasttext supervised -input ../spanish/spanish_intermediateAllDB_train.tsv -output ../spanish_intermediateAllDB.train_model -dim 100 -lr 0.1 -wordNgrams 2 -minCount 1 -bucket 10000000 -epoch 50 -thread 4
+
+# Classify the test instances  
+./fasttext predict ../spanish_intermediateAllDB.train_model.bin ../spanish/spanish_intermediateAllDB_test_dummyval.csv > ../spanish/spanish_intermediateAllDB_test.predict 
+
+cut -f1 -d"," spanish_intermediateAllDB_test.tsv | paste - spanish_intermediateAllDB_test.predict  > spanish_intermediateAllDB_test.predictions ; python3 ../compute_prf.py spanish_intermediateAllDB_test.predictions
+
+
+
+

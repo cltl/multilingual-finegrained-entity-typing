@@ -13,6 +13,19 @@ Prerequisites:
 * https://github.com/alvations/spaghetti-tagger (POS tagger for Spanish) 
 * https://github.com/facebookresearch/fastText (the machine learning library) 
 
+Data used:
+
+Dutch 
+* https://dumps.wikimedia.org/nlwiki/20170201/nlwiki-20170201-pages-articles-multistream.xml.bz2
+* http://downloads.dbpedia.org/2016-04/core-i18n/nl/instance_types_nl.ttl.bz2
+* http://downloads.dbpedia.org/2016-04/core-i18n/nl/wikipedia_links_nl.ttl.bz2
+
+Spanish
+* https://dumps.wikimedia.org/eswiki/20170201/eswiki-20170201-pages-articles-multistream.xml.bz2
+* http://downloads.dbpedia.org/2016-04/core-i18n/es/instance_types_es.ttl.bz2
+* http://downloads.dbpedia.org/2016-04/core-i18n/es/wikipedia_links_es.ttl.bz2
+
+
 What's in this package
 ==================
 
