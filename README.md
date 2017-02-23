@@ -33,6 +33,9 @@ In Processing, you find the scripts and instructions to generate the training an
 
 In Experiments, you find the scripts and setup of the Dutch and Spanish experiments
 
-
+Pre-trained models
+===============
+The pre-trained models generated for this paper can be found at:
+http://kyoto.let.vu.nl/multilingual-entity-typing/
 
 Contact: marieke.van.erp@vu.nl 

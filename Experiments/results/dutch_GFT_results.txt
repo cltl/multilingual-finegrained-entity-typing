@@ -1,0 +1,67 @@
+Macro:  (0.93200018622820158, 0.88309849945187036, 0.9035173917476943, None)
+Micro:  (0.97193767495058747, 0.97193767495058747, 0.97193767495058747, None)
+Weighted:  (0.97165501780436214, 0.97193767495058747, 0.9716919191606338, None)
+                                             precision    recall  f1-score   support
+
+                __label__location/celestial       0.99      0.98      0.98      1895
+                     __label__location/city       0.98      0.99      0.99    179919
+                  __label__location/country       0.99      0.99      0.99    142240
+         __label__location/geography/island       0.93      0.84      0.88      5310
+       __label__location/geography/mountain       0.97      0.90      0.93      2940
+                     __label__location/park       0.94      0.87      0.91       253
+                __label__location/structure       0.92      0.88      0.90      1693
+        __label__location/structure/airport       0.96      0.87      0.91       575
+          __label__location/structure/hotel       0.86      0.83      0.84        46
+     __label__location/structure/restaurant       0.83      0.42      0.56        60
+__label__location/structure/sports_facility       0.96      0.72      0.83        36
+           __label__location/transit/bridge       0.95      0.92      0.94       460
+          __label__location/transit/railway       0.96      0.96      0.96      2100
+             __label__location/transit/road       0.99      0.98      0.99      2392
+                      __label__organization       0.98      0.96      0.97      1895
+              __label__organization/company       0.97      0.96      0.97      9529
+    __label__organization/company/broadcast       0.99      0.99      0.99      1975
+         __label__organization/company/news       0.98      0.98      0.98      1316
+           __label__organization/government       0.97      0.98      0.97       419
+             __label__organization/military       0.98      0.97      0.97      1025
+      __label__organization/political_party       0.98      0.97      0.97      2714
+        __label__organization/sports_league       0.99      0.99      0.99      1485
+          __label__organization/sports_team       0.97      0.87      0.92        39
+              __label__organization/transit       0.97      0.94      0.96      1285
+               __label__other/art/broadcast       0.95      0.93      0.94      6071
+                    __label__other/art/film       0.91      0.86      0.89      4697
+                   __label__other/art/music       0.87      0.66      0.75       304
+                   __label__other/art/stage       0.50      0.20      0.29         5
+                 __label__other/art/writing       1.00      0.91      0.95        57
+                       __label__other/award       0.93      0.97      0.95        70
+                   __label__other/body_part       0.95      0.96      0.96      1298
+                    __label__other/currency       0.98      0.96      0.97       898
+                       __label__other/event       0.92      0.87      0.90       305
+              __label__other/event/election       0.97      0.98      0.98      1092
+               __label__other/event/holiday       0.98      0.95      0.97       262
+               __label__other/event/protest       0.97      0.93      0.95        61
+          __label__other/event/sports_event       1.00      0.98      0.99      1493
+      __label__other/event/violent_conflict       0.99      0.98      0.99     15128
+               __label__other/health/malady       0.98      0.98      0.98      4964
+                    __label__other/heritage       0.90      0.85      0.88      2167
+                    __label__other/internet       0.97      0.94      0.95       891
+                    __label__other/language       0.98      0.98      0.98     25781
+                       __label__other/legal       0.99      0.92      0.95       148
+                     __label__other/product       0.96      0.89      0.93        76
+            __label__other/product/software       0.96      0.94      0.95      1881
+                    __label__other/religion       1.00      0.99      0.99      1491
+                  __label__other/scientific       0.94      0.90      0.92      3012
+          __label__other/sports_and_leisure       0.99      0.99      0.99      6696
+                __label__other/supernatural       0.89      0.86      0.87      1947
+                            __label__person       0.90      0.90      0.90     10821
+                     __label__person/artist       0.93      0.88      0.90      3712
+               __label__person/artist/actor       0.87      0.87      0.87      6985
+              __label__person/artist/author       0.93      0.93      0.93      6538
+               __label__person/artist/music       0.91      0.93      0.92     15308
+                    __label__person/athlete       0.77      0.73      0.75      2961
+                     __label__person/doctor       1.00      0.60      0.75        10
+                      __label__person/legal       0.31      0.31      0.31        36
+           __label__person/political_figure       0.89      0.87      0.88      5088
+                      __label__person/title       0.96      0.94      0.95      4500
+
+                                avg / total       0.97      0.97      0.97    498355
+
