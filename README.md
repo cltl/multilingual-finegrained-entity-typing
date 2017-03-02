@@ -41,12 +41,14 @@ http://kyoto.let.vu.nl/multilingual-entity-typing/
 To run those, you need to format your input data as a CSV file with the following columns:
 label, entity mention, entity shape, head of the entity phrase, non-head words entity phrase, word before the entity, word after, entity head trigrams 
 
-For example: 
-__label__Species , vliesvleugelig insect , aaaaaaaaaaaaaa aaaaaa , insec
-t , vliesvleugelig , een, uit , _in ins nse sec ect ct_
-__label__VideoGame , Unreal Tournament , Aaaaaa Aaaaaaaaaa , Tournament , Unreal , uitgebrachte, van , _To Tou our ur
-n rna nam ame men ent nt_
+For example:
+ 
+\_\_label\_\_Species , vliesvleugelig insect , aaaaaaaaaaaaaa aaaaaa , insect , vliesvleugelig , een, uit , \_in ins nse sec ect ct\_
+
+\_\_label\_\_VideoGame , Unreal Tournament , Aaaaaa Aaaaaaaaaa , Tournament , Unreal , uitgebrachte, van ,\_To Tou our urn rna nam ame men ent nt\_
 
 Note that fastText expects the label to start with "__label__" 
+
+To do: create a wrapper that can do this so a normal text can be tagged. 
 
 Contact: marieke.van.erp@vu.nl 
