@@ -15,6 +15,7 @@ import nltk
 import glob 
 import spaghetti as sgt
 
+nltk.data.path.append("/data/nltk_data")
 
 dbpedia_types = {} 
 with open('dbpedia-wikipedia-type-es.tsv', 'r') as f:
@@ -35,8 +36,8 @@ def analyse_and_store_links(text):
 	links = []
 	surface_forms = [] 
 	tokenised_sentences =[]
-	pos_tags = []  
-	sents = []
+	pos_tags = []
+	sents = []  
 	for tag in soup.findAll('a', href=True):
 		#print(tag['href'] + "\t" +  tag.string + "\t" + str(tag))
 		# Ok, so you can get the tag, the link and the string, now you can loop through those 
@@ -48,11 +49,8 @@ def analyse_and_store_links(text):
 		links.append(link)
 		surface_forms.append(tag.string)
 		cleantext = re.sub('<[^>]*>', '', text)
-		#print(cleantext) 
+		#print(tag.string + "\t" + cleantext) 
 		sents = sent_tokenize(cleantext)
-		print(len(sents))
-		if len(sents) == 0:
-			sents.append(cleantext)
 		for sent in sents:
 			tokens = word_tokenize(sent)
 			pos = sgt.pos_tag(tokens)
@@ -66,7 +64,6 @@ def analyse_and_store_links(text):
 	#print(len(surface_forms))
 	for idx, val in enumerate(surface_forms):
 		#print(idx)
-		#print(surface_forms[idx], links[idx])
 		for sent in tokenised_sentences: 
 			#print(sent)
 			match = re.search(surface_forms[idx].rstrip(), sent)
@@ -93,13 +90,14 @@ def analyse_and_store_links(text):
 #for item in result:
 #	print(item)
 
-files = glob.glob('/mnt/scistor1/group/marieke/entity-typing-es/B*/wiki_*')
+files = glob.glob('text-es/' + sys.argv[1] + '/wiki_*')
+#files = ['text-es/BL/wiki_00']
 #files = glob.glob('wikiextractor/text-es/AA/wiki*')
 for file in files:
 	f = open(file, 'r')
 #	print(file)
 	outputname = file + ".stripped" 
-	outputfile = open(outputname, 'w')
+#	outputfile = open(outputname, 'w')
 	title = ''
 	wikiurl = ''
 	for line in f:

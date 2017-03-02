@@ -1,0 +1,17 @@
+Creating the feature vectors:
+
+1. Download and extract a Wikipedia dump and its corresponding DBpedia wikipedia-links 
+and instance-type files 
+2. Run wikiextractor with the -l option (to preserve links) 
+3. Merge the wikipedia links and instance type information: python merge-wikilinks.py 
+(change lines 9 and 19 to refer to your language files) 
+4. python wiki-to-index-nl.py / python wiki-to-index-es.py (this can take a few days so
+you may want to parallelise it) 
+
+If you want to run this for a different language, you probably want to swap out 
+the tokenizer and you need to change lines 18-21, 24, 28, 56, 76 & 87 in wiki-to-index-nl 
+and lines 18, 21, 25, 56, 93 & 106 (which match specific files used in these experiments 
+or specific languages). 
+
+You can then run python generateVectors.py <INPUT> or generateVectors_allDBpediaTypes.py
+(for all types present in the files) to get the right input format for fastText.  
