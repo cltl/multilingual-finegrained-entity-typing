@@ -38,4 +38,15 @@ Pre-trained models
 The pre-trained models generated for this paper can be found at:
 http://kyoto.let.vu.nl/multilingual-entity-typing/
 
+To run those, you need to format your input data as a CSV file with the following columns:
+label, entity mention, entity shape, head of the entity phrase, non-head words entity phrase, word before the entity, word after, entity head trigrams 
+
+For example: 
+__label__Species , vliesvleugelig insect , aaaaaaaaaaaaaa aaaaaa , insec
+t , vliesvleugelig , een, uit , _in ins nse sec ect ct_
+__label__VideoGame , Unreal Tournament , Aaaaaa Aaaaaaaaaa , Tournament , Unreal , uitgebrachte, van , _To Tou our ur
+n rna nam ame men ent nt_
+
+Note that fastText expects the label to start with "__label__" 
+
 Contact: marieke.van.erp@vu.nl 

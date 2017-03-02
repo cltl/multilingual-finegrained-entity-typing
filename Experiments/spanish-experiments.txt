@@ -70,25 +70,25 @@ cut -f2- -d"," < spanish_intermediateAllDB_test.tsv | sed 's/^/__label__dummy ,/
 ./fasttext supervised -input ../spanish/spanish_intermediateAllDB_train.tsv -output ../spanish_DBpedia_types_model -dim 100 -lr 0.1 -wordNgrams 2 -minCount 100 -bucket 10000000 -epoch 50 -thread 4
 
 # Classify the test instances  
-./fasttext predict ../spanish_intermediateAllDB.train_model.bin ../spanish/spanish_intermediateAllDB_test_dummyval.tsv > ../spanish/spanish_intermediateAllDB_test.predict 
+./fasttext predict ../spanish_DBpedia_types_model.bin ../spanish/spanish_intermediateAllDB_test_dummyval.tsv > ../spanish/spanish_intermediateAllDB_test.predict 
 
-cut -f1 -d"," spanish_intermediateAllDB_test.tsv | paste - spanish_intermediateAllDB_test.predict  > spanish_intermediateAllDB_test.predictions ; python3 ../compute_prf.py spanish_intermediateAllDB_test.predictions
+cut -f1 -d"," spanish_intermediateAllDB_test.tsv | paste - spanish_intermediateAllDB_test.predict  > spanish_intermediateAllDB_test.predictions ; python3 ../compute_prf.py spanish_intermediateAllDB_test.predictions > spanish_DBpedia_types_results.txt 
 
 
 ### Experiment with only unknown entities (/dark entities) 
-cut -f2 -d"," < spanish_intermediateAllDB_train.tsv | sort | uniq | sed 's/^ //g' > spanish_entities_in_train.tsv
+cut -f2 -d"," < spanish_intermediate_train.tsv | sort | uniq | sed 's/^ //g' > spanish_entities_in_train.tsv
 python3 ../generate_darkies_test.py spanish_entities_in_train.tsv spanish_intermediate_test.tsv > spanish_intermediate_test_darkies.tsv 
 
 ./fasttext predict ../spanish_GFT_model.bin ../spanish/spanish_intermediate_test_darkies.tsv > ../spanish/spanish_intermediate_test_darkies.pred 
 
-cut -f1 -d"," spanish_intermediate_test_darkies.tsv | paste - spanish_intermediate_test_darkies.pred > spanish_intermediate_test_darkies.predictions ; python3 compute_prf.py spanish_intermediate_test_darkies.predictions > spanish_GFT_darkies.results.txt 
+cut -f1 -d"," spanish_intermediate_test_darkies.tsv | paste - spanish_intermediate_test_darkies.pred > spanish_intermediate_test_darkies.predictions ; python3 ../compute_prf.py spanish_intermediate_test_darkies.predictions > spanish_GFT_darkies.results.txt 
 
 # And also for all classes 
 cut -f2 -d"," < spanish_intermediateAllDB_train.tsv | sort | uniq | sed 's/^ //g' > spanish_entities_in_trainAllDBClass.tsv
-python generate_darkies_test.py spanish_entities_in_trainAllDBClass.tsv spanish_intermediateAllDB_test.tsv > spanish_intermediateAllDB_test_darkies.tsv 
+python3 ../generate_darkies_test.py spanish_entities_in_trainAllDBClass.tsv spanish_intermediateAllDB_test.tsv > spanish_intermediateAllDB_test_darkies.tsv 
 
-./fasttext predict ../spanish_DBpedia_types_model ../spanish_intermediateAllDB_test_darkies.tsv  > ../spanish_intermediateAllDB_test_darkies.pred
+./fasttext predict ../spanish_DBpedia_types_model.bin ../spanish/spanish_intermediateAllDB_test_darkies.tsv  > ../spanish/spanish_intermediateAllDB_test_darkies.pred
 
-cut -f1 -d"," spanish_intermediateAllDB_test_darkies.tsv | paste - spanish_intermediateAllDB_test_darkies.pred > spanish_intermediateAllDB_test_darkies.predictions ; python3 compute_prf.py > spanish_DBpedia_types_darkies_results.txt  
+cut -f1 -d"," spanish_intermediateAllDB_test_darkies.tsv | paste - spanish_intermediateAllDB_test_darkies.pred > spanish_intermediateAllDB_test_darkies.predictions ; python3 ../compute_prf.py spanish_intermediateAllDB_test_darkies.predictions > spanish_DBpedia_types_darkies_results.txt  
 
 
