@@ -44,10 +44,9 @@ label, entity mention, entity shape, head of the entity phrase, non-head words e
 For example:
  
 \_\_label\_\_Species , vliesvleugelig insect , aaaaaaaaaaaaaa aaaaaa , insect , vliesvleugelig , een, uit , \_in ins nse sec ect ct\_
-
 \_\_label\_\_VideoGame , Unreal Tournament , Aaaaaa Aaaaaaaaaa , Tournament , Unreal , uitgebrachte, van ,\_To Tou our urn rna nam ame men ent nt\_
 
-Note that fastText expects the label to start with "__label__" 
+Note that fastText expects the label to start with "\_\_label\_\_" 
 
 To do: create a wrapper that can do this so a normal text can be tagged. 
 
