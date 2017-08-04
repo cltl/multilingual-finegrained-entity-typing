@@ -18,7 +18,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-f', nargs=1, help='Provide an input file. Fileformat: naf with entity layer.', dest='file', required=True)
+parser.add_argument('-f', nargs=1, help='Provide an input file. Fileformat: naf with entity layer (compulsory).', dest='file', required=True)
 parser.add_argument('-l', nargs=1, help='Choose language: nl or es. Default is nl.', dest='lang', default=['nl'])
 parser.add_argument('-t', nargs=1, help='Choose type hierarchy: gft or dbp. Default is gft.', dest='type', default=['gft'])
 parser.add_argument('-n', nargs=1, help='Take the NER type into account as well: y or n. Default is n.', dest='nertype', default=['n'])
