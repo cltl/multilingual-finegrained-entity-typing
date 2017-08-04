@@ -51,7 +51,7 @@ For example:
 
 Note that fastText expects the label to start with "\_\_label\_\_" 
 
-Using one of the pre-trained models to add fine-grained entity types to a text
+Annotating NAF entities 
 =====================================
 For a [NAF](https://github.com/newsreader/NAF) file with recognised entities you can use NAFWrapper_file.py to add fine-grained types to each entity. Make sure you download one of the pre-trained models (or train your own) and have it in the same directory as NAFWrapper_file.py. The option -n switches between reusing the coarse entity type as assigned by the NER system, this means that if the NER system assigned 'person', the finegrained typing system will only return subtypes of that same type. By default this switch is on. 
 
@@ -64,7 +64,7 @@ optional arguments:
   -l LANG     Choose language: nl or es
   -t TYPE     Choose type hierarchy: gft or dbp
   -n NERTYPE  Take the NER type into account as well: y or n
-  --version   show program's version number and exit
+  --version   show program's version number and exit 
 
 
 The models are quite large (nearly 4GB) so they will take a while to load. I'm working on a batch mode. 
