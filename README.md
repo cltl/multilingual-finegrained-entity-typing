@@ -4,7 +4,7 @@ Multilingual Entity Typing
 This repo contains the scripts to generate a fine-grained entity typing system for Dutch and Spanish as described in Multilingual Fine-Grained Entity Typing (Presented at: http://ldk2017.org/)
 
 When using this package in a publication, please cite:
-van Erp M., Vossen P. (2017) [Multilingual Fine-Grained Entity Typing][https://link.springer.com/chapter/10.1007%2F978-3-319-59888-8_23]. In: Gracia J., Bond F., McCrae J., Buitelaar P., Chiarcos C., Hellmann S. (eds) Language, Data, and Knowledge. LDK 2017. Lecture Notes in Computer Science, vol 10318. Springer, Cham
+van Erp M., Vossen P. (2017) [Multilingual Fine-Grained Entity Typing](https://link.springer.com/chapter/10.1007%2F978-3-319-59888-8_23). In: Gracia J., Bond F., McCrae J., Buitelaar P., Chiarcos C., Hellmann S. (eds) Language, Data, and Knowledge. LDK 2017. Lecture Notes in Computer Science, vol 10318. Springer, Cham
 
 Prerequisites:
 * Python3
