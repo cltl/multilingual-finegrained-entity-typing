@@ -56,15 +56,15 @@ Annotating NAF entities
 For a [NAF](https://github.com/newsreader/NAF) file with recognised entities you can use NAFWrapper_file.py to add fine-grained types to each entity. Make sure you download one of the pre-trained models (or train your own) and have it in the same directory as NAFWrapper_file.py. The option -n switches between reusing the coarse entity type as assigned by the NER system, this means that if the NER system assigned 'person', the finegrained typing system will only return subtypes of that same type. By default this switch is on. 
 
 usage: NAFwrapper_file.py [-h] -f FILE [-l LANG] [-t TYPE] [-n NERTYPE]  
-                          [--version]  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                          [--version]  
 
 optional arguments:  
-  -h, --help  show this help message and exit  
-  -f FILE     Provide an input file. Fileformat: naf with entity layer (compulsory).  
-  -l LANG     Choose language: nl or es. Default is nl.  
-  -t TYPE     Choose type hierarchy: gft or dbp. Default is gft.  
-  -n NERTYPE  Take the NER type into account as well: y or n. Default is n.  
-  --version   show program's version number and exit  
+&nbsp;&nbsp;&nbsp;&nbsp;  -h, --help  show this help message and exit  
+&nbsp;&nbsp;&nbsp;&nbsp;  -f FILE     Provide an input file. Fileformat: naf with entity layer (compulsory).  
+&nbsp;&nbsp;&nbsp;&nbsp;  -l LANG     Choose language: nl or es. Default is nl.  
+&nbsp;&nbsp;&nbsp;&nbsp; -t TYPE     Choose type hierarchy: gft or dbp. Default is gft.  
+&nbsp;&nbsp;&nbsp;&nbsp;  -n NERTYPE  Take the NER type into account as well: y or n. Default is n.  
+&nbsp;&nbsp;&nbsp;&nbsp;  --version   show program's version number and exit  
 
 
 The models are quite large (nearly 4GB) so they will take a while to load. I'm working on a batch mode. 
