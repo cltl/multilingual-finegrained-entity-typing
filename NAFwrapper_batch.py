@@ -19,7 +19,7 @@ import glob
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-d', nargs=1, help='Provide a directory with NAF files with entity layer (compulsory).', dest='file', required=True)
+parser.add_argument('-d', nargs=1, help='Provide a directory with NAF files with entity layer (compulsory).', dest='dir', required=True)
 parser.add_argument('-m', nargs=1, help='Specify the model to use (compulsory)', dest='modelfile', required=True)
 parser.add_argument('-n', nargs=1, help='Take the NER type into account as well: y or n. Default is n.', dest='nertype', default=['n'])
 parser.add_argument('--version', action='version', version='%(prog)s 1.0')
@@ -42,7 +42,7 @@ def remove_accents(input_str):
 
 # read in the directory and process each file in turn 
 
-for file in glob.glob(args.file[0] + '*.naf'):
+for file in glob.glob(args.dir[0] + '*.naf'):
 	infile = open(file, 'r')
 	outfile = file[0:-4] + "_finegrainedEntities.naf"
 	my_parser = KafNafParser(infile)
