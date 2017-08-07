@@ -19,16 +19,11 @@ import argparse
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-f', nargs=1, help='Provide an input file. Fileformat: naf with entity layer (compulsory).', dest='file', required=True)
-parser.add_argument('-l', nargs=1, help='Choose language: nl or es. Default is nl.', dest='lang', default=['nl'])
-parser.add_argument('-t', nargs=1, help='Choose type hierarchy: gft or dbp. Default is gft.', dest='type', default=['gft'])
+parser.add_argument('-m', nargs=1, help='Specify the model to use (compulsory)', dest='modelfile', required=True)
 parser.add_argument('-n', nargs=1, help='Take the NER type into account as well: y or n. Default is n.', dest='nertype', default=['n'])
 parser.add_argument('--version', action='version', version='%(prog)s 1.0')
  
 args = parser.parse_args()
-
-print('language     =', args.lang)
-print('type hierarchy     =', args.type)
-print('ner type     =', args.nertype)
 
 #infile = open(sys.argv[1],"r")
 #infile = open('89007714_06.naf.out.naf', 'r')
@@ -36,16 +31,10 @@ infile = open(args.file[0], 'r')
 my_parser = KafNafParser(infile)
 
 # load the model 
-if args.lang[0] == 'nl' and args.type[0] == 'gft':
-	model = fasttext.load_model('dutch_GFT_Types_model.bin')
-elif args.lang[0] == 'es' and args.type[0] == 'gft':
-	model = fasttext.load_model('spanish_GFT_Types_model.bin')
-elif args.lang[0] == 'nl' and args.type[0] == 'dbp':
-	model = fasttext.load_model('dutch_dbp_Types_model.bin')
-elif args.lang[0] == 'es' and args.type[0] == 'dbp':
-	model = fasttext.load_model('spanish_dbp_Types_model.bin')
-else:
-	print("Check the values of options -l and -t or request additional help with -h")
+try:
+	model = fasttext.load_model(args.modelfile[0])
+except:
+	print("Check the values of options -f and -m or request additional help with -h")
 	exit(0)
 	
 def word2ngrams(text, n=3, exact=True):
