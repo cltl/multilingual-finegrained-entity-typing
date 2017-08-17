@@ -15,9 +15,9 @@ Prerequisites:
 	* NLTK3 
 	* Scikit-learn 
 	* fastText 
-* https://github.com/attardi/wikiextractor (to clean up Wikipedia data)
-* https://github.com/evanmiltenburg/Dutch-tagger (POS tagger for Dutch)
-* https://github.com/alvations/spaghetti-tagger (POS tagger for Spanish) 
+* https://github.com/attardi/wikiextractor (to clean up Wikipedia data, also included in this repo as a submodule)
+* https://github.com/evanmiltenburg/Dutch-tagger (POS tagger for Dutch, also included in this repo as a submodule)
+* https://github.com/alvations/spaghetti-tagger (POS tagger for Spanish, also included in this repo as a submodule) 
 
 To install the dependencies for training your own models for Dutch and Spanish, uncomment lines 35, 37-39 and 54, 56-58 in install.sh. If you want to use the pretrained models, simply run install.sh with option es, nl, or all for Spanish, Dutch or all, respectively. 
 
