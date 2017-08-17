@@ -1,4 +1,7 @@
 #!/bin/bash
+# Installation commands for multilingual finegrained entity typing 
+# August 2017
+# Big thanks to Filip Ilievski 
 
 if [ -z "$1" ]; then
     echo "No argument supplied. Please supply 'es' for Spanish, 'nl' for Dutch, or 'all' for both."
