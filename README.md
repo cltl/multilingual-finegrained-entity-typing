@@ -14,10 +14,12 @@ Prerequisites:
 	* BeautifulSoup 
 	* NLTK3 
 	* Scikit-learn 
+	* fastText 
 * https://github.com/attardi/wikiextractor (to clean up Wikipedia data)
 * https://github.com/evanmiltenburg/Dutch-tagger (POS tagger for Dutch)
 * https://github.com/alvations/spaghetti-tagger (POS tagger for Spanish) 
-* https://github.com/facebookresearch/fastText (the machine learning library) 
+
+To install the dependencies for training your own models for Dutch and Spanish, uncomment lines 35, 37-39 and 54, 56-58 in install.sh. If you want to use the pretrained models, simply run install.sh with option es, nl, or all for Spanish, Dutch or all, respectively. 
 
 Data used:
 
@@ -38,6 +40,8 @@ What's in this package
 In Processing, you find the scripts and instructions to generate the training and test datasets 
 
 In Experiments, you find the scripts and setup of the Dutch and Spanish experiments
+
+In test, you find test files for Spanish and Dutch to check whether everything is installed properly.  
 
 NAFwrapper_file.py and NAFwrapper_batch.py to annotate NAF documents that already contain recognised entities with finegrained entity type information. 
 
