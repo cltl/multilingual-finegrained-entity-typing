@@ -135,7 +135,7 @@ for entity in my_parser.get_entities():
 	# entity character trigrams 
 	trigraminput = "_" + head + "_"
 	trigrams = word2ngrams(trigraminput)
-	# print the whole shebang to a temp file 
+	# create a feature vector of the whole shebang  
 	vector =  entity_string.replace(",", '=C=') + " , " +   entity_shape.replace(",", '') + " , " +  head.replace(",", '') + " , " +  nh.replace(",", '') + " , " +  word_before.replace(",", '') + " , " +  word_after.replace(",", '') + " , " +  " ".join(trigrams).replace(",", '') 
 	# query the model and assign a fine-grained type 
 	labels = model.predict_proba(vector)

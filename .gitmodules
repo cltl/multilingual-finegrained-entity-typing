@@ -1,0 +1,9 @@
+[submodule "wikiextractor"]
+	path = wikiextractor
+	url = https://github.com/attardi/wikiextractor
+[submodule "Dutch-tagger"]
+	path = Dutch-tagger
+	url = https://github.com/evanmiltenburg/Dutch-tagger
+[submodule "spaghetti-tagger"]
+	path = spaghetti-tagger
+	url = https://github.com/alvations/spaghetti-tagger

@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<NAF version="v3" xml:lang="nl">
+  <nafHeader>
+    <public publicId="nr_demo_text" uri="nr_demo_text"/>
+    <linguisticProcessors layer="srl">
+      <lp beginTimestamp="2017-08-17T20:49:17CEST" endTimestamp="2017-08-17T20:49:17CEST" hostname="r6n14.lisa.surfsara.nl" name="SoNaR-News-trained-SRL" timestamp="2017-08-17T20:49:17CEST" version="1.1"/>
+      <lp beginTimestamp="2017-08-17T20:49:18+0200" endTimestamp="2017-08-17T20:49:18+0200" hostname="r6n14.lisa.surfsara.nl" name="vua-nominal-events" timestamp="2017-08-17T20:49:18+0200" version="1.0"/>
+      <lp beginTimestamp="2017-08-17T20:49:18CEST" endTimestamp="2017-08-17T20:49:18CEST" hostname="r6n14.lisa.surfsara.nl" name="vua-srl-dutch-additional-roles-for-nominal-predicates" timestamp="2017-08-17T20:49:18CEST" version="2.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="text">
+      <lp beginTimestamp="2017-08-17T20:48:23+0200" endTimestamp="2017-08-17T20:48:23+0200" hostname="r6n14.lisa.surfsara.nl" name="ixa-pipe-tok-nl" version="1.8.0-56f83ce4b61680346f15e5d4e6de6293764f7383"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="topics">
+      <lp beginTimestamp="2017-08-17T20:48:23+0200" endTimestamp="2017-08-17T20:48:44+0200" hostname="r6n14.lisa.surfsara.nl" name="ixa-pipe-topic-nl" version="1.0.3-40be8debb88093b426ae3520d60df60161968e27"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="coreferences">
+      <lp beginTimestamp="2017-08-17T20:49:25+0200" endTimestamp="2017-08-17T20:49:25+0200" hostname="r6n14.lisa.surfsara.nl" name="vua-event-coref-intradoc-wn-sim" timestamp="2017-08-17T20:49:25+0200" version="3.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="terms">
+      <lp beginTimestamp="2017-08-17T20:48:52CEST" endTimestamp="2017-08-17T20:48:52CEST" hostname="r6n14.lisa.surfsara.nl" name="Morphosyntactic parser based on Alpino" timestamp="2017-08-17T20:48:52CEST" version="0.2_22sept2015"/>
+      <lp beginTimestamp="2017-08-17T20:49:03CEST" endTimestamp="2017-08-17T20:49:03CEST" hostname="r6n14.lisa.surfsara.nl" name="VUA-DSC-WSD" timestamp="2017-08-17T20:49:03CEST" version="1.2#20jan2015"/>
+      <lp beginTimestamp="2017-08-17T20:49:16+0200" endTimestamp="2017-08-17T20:49:16+0200" hostname="r6n14.lisa.surfsara.nl" name="vua-predicate-matrix-tagger" timestamp="2017-08-17T20:49:16+0200" version="1.0"/>
+      <lp beginTimestamp="2017-08-17T20:49:19+0200" endTimestamp="2017-08-17T20:49:19+0200" hostname="r6n14.lisa.surfsara.nl" name="vua-framenet-srl-tagger" timestamp="2017-08-17T20:49:19+0200" version="1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="factualities">
+      <lp beginTimestamp="2017-08-17T20:49:19CEST" endTimestamp="2017-08-17T20:49:19CEST" hostname="r6n14.lisa.surfsara.nl" name="vua-multilingual-factuality-system" timestamp="2017-08-17T20:49:19CEST" version="0.01"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="constituents">
+      <lp beginTimestamp="2017-08-17T20:48:52CEST" endTimestamp="2017-08-17T20:48:52CEST" hostname="r6n14.lisa.surfsara.nl" name="Morphosyntactic parser based on Alpino" timestamp="2017-08-17T20:48:52CEST" version="0.2_22sept2015"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="deps">
+      <lp beginTimestamp="2017-08-17T20:48:52CEST" endTimestamp="2017-08-17T20:48:52CEST" hostname="r6n14.lisa.surfsara.nl" name="Morphosyntactic parser based on Alpino" timestamp="2017-08-17T20:48:52CEST" version="0.2_22sept2015"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="opinions">
+      <lp beginTimestamp="2017-08-17T20:49:20CEST" endTimestamp="2017-08-17T20:49:20CEST" hostname="r6n14.lisa.surfsara.nl" name="Opinion Miner Deluxe" timestamp="2017-08-17T20:49:20CEST" version="7jan2016_3.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="entities">
+      <lp beginTimestamp="2017-08-17T20:48:53+0200" endTimestamp="2017-08-17T20:49:00+0200" hostname="r6n14.lisa.surfsara.nl" name="ixa-pipe-nerc-nl-6-class-clusters-sonar" version="1.5.4-ca02c931bc0b200ccdb8b5795a7552e4cc0d4802"/>
+      <lp beginTimestamp="2017-08-17T20:49:06+0200" endTimestamp="2017-08-17T20:49:09+0200" hostname="r6n14.lisa.surfsara.nl" name="ixa-pipe-ned-nl" version="1.1.1-d35d4df5cb71940bf642bb1a83e2b5b7584010df"/>
+      <lp beginTimestamp="2017-08-17T20:49:09CEST" endTimestamp="2017-08-17T20:49:09CEST" hostname="r6n14.lisa.surfsara.nl" name="vua-intra-document-entity-coference-for-linking" timestamp="2017-08-17T20:49:09CEST" version="1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="timeExpressions">
+      <lp beginTimestamp="2017-08-17T20:49:10+0200" endTimestamp="2017-08-17T20:49:12+0200" hostname="r6n14.lisa.surfsara.nl" name="ixa-pipe-heideltime-nl" version="1.0.1-0fd3b5bd4c9a82b1624928a487b3a963a266f10c"/>
+    </linguisticProcessors>
+  </nafHeader>
+  <raw>De Mona Lisa is een 16de eeuws olieverfschilderij gecreëerd door Leonardo da Vinci. Het hangt in het Louvre in Parijs.</raw>
+  <text>
+    <wf id="w1" length="2" offset="0" para="1" sent="1">De</wf>
+    <wf id="w2" length="4" offset="3" para="1" sent="1">Mona</wf>
+    <wf id="w3" length="4" offset="8" para="1" sent="1">Lisa</wf>
+    <wf id="w4" length="2" offset="13" para="1" sent="1">is</wf>
+    <wf id="w5" length="3" offset="16" para="1" sent="1">een</wf>
+    <wf id="w6" length="4" offset="20" para="1" sent="1">16de</wf>
+    <wf id="w7" length="5" offset="25" para="1" sent="1">eeuws</wf>
+    <wf id="w8" length="18" offset="31" para="1" sent="1">olieverfschilderij</wf>
+    <wf id="w9" length="9" offset="50" para="1" sent="1">gecreëerd</wf>
+    <wf id="w10" length="4" offset="60" para="1" sent="1">door</wf>
+    <wf id="w11" length="8" offset="65" para="1" sent="1">Leonardo</wf>
+    <wf id="w12" length="2" offset="74" para="1" sent="1">da</wf>
+    <wf id="w13" length="5" offset="77" para="1" sent="1">Vinci</wf>
+    <wf id="w14" length="1" offset="82" para="1" sent="1">.</wf>
+    <wf id="w15" length="3" offset="84" para="1" sent="2">Het</wf>
+    <wf id="w16" length="5" offset="88" para="1" sent="2">hangt</wf>
+    <wf id="w17" length="2" offset="94" para="1" sent="2">in</wf>
+    <wf id="w18" length="3" offset="97" para="1" sent="2">het</wf>
+    <wf id="w19" length="6" offset="101" para="1" sent="2">Louvre</wf>
+    <wf id="w20" length="2" offset="108" para="1" sent="2">in</wf>
+    <wf id="w21" length="6" offset="111" para="1" sent="2">Parijs</wf>
+    <wf id="w22" length="1" offset="117" para="1" sent="2">.</wf>
+  </text>
+  <terms>
+    <term id="t_0" lemma="de" morphofeat="LID(bep,stan,rest)" pos="det" type="close">
+      <span>
+        <!--De-->
+        <target id="w1"/>
+      </span>
+    </term>
+    <term id="t_1" lemma="Mona" morphofeat="SPEC(deeleigen)" pos="name" type="open">
+      <span>
+        <!--Mona-->
+        <target id="w2"/>
+      </span>
+    </term>
+    <term id="t_2" lemma="Lisa" morphofeat="SPEC(deeleigen)" pos="name" type="open">
+      <span>
+        <!--Lisa-->
+        <target id="w3"/>
+      </span>
+    </term>
+    <term id="t_3" lemma="zijn" morphofeat="WW(pv,tgw,ev)" pos="verb" type="open">
+      <span>
+        <!--is-->
+        <target id="w4"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.012300172" reference="eng-30-02603699-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.033110034" reference="eng-30-02702508-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.0062767393" reference="odwn-10-104942472-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.009221483" reference="eng-30-02719930-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.017850472" reference="eng-30-02655135-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.011479944" reference="odwn-10-101477390-v" reftype="Synset" resource="ODWN"/>
+        <externalRef reference="grammatical" resource=""/>
+      </externalReferences>
+    </term>
+    <term id="t_4" lemma="een" morphofeat="LID(onbep,stan,agr)" pos="det" type="close">
+      <span>
+        <!--een-->
+        <target id="w5"/>
+      </span>
+    </term>
+    <term id="t_5" lemma="16de" morphofeat="ADJ(prenom,basis,zonder)" pos="adj" type="open">
+      <span>
+        <!--16de-->
+        <target id="w6"/>
+      </span>
+    </term>
+    <term id="t_6" lemma="eeuws" morphofeat="ADJ(prenom,basis,zonder)" pos="adj" type="open">
+      <span>
+        <!--eeuws-->
+        <target id="w7"/>
+      </span>
+    </term>
+    <term id="t_7" lemma="olie_verf_schilderij" morphofeat="N(soort,ev,basis,onz,stan)" pos="noun" type="open">
+      <span>
+        <!--olieverfschilderij-->
+        <target id="w8"/>
+      </span>
+    </term>
+    <term id="t_8" lemma="gecreëerd" morphofeat="WW(vd,vrij,zonder)" pos="adj" type="open">
+      <span>
+        <!--gecreëerd-->
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t_9" lemma="door" morphofeat="VZ(init)" pos="prep" type="close">
+      <span>
+        <!--door-->
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t_10" lemma="Leonardo" morphofeat="SPEC(deeleigen)" pos="name" type="open">
+      <span>
+        <!--Leonardo-->
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t_11" lemma="da" morphofeat="SPEC(deeleigen)" pos="name" type="open">
+      <span>
+        <!--da-->
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t_12" lemma="Vinci" morphofeat="SPEC(deeleigen)" pos="name" type="open">
+      <span>
+        <!--Vinci-->
+        <target id="w13"/>
+      </span>
+    </term>
+    <term id="t_13" lemma="." morphofeat="LET()" pos="punct" type="open">
+      <span>
+        <!--.-->
+        <target id="w14"/>
+      </span>
+    </term>
+    <term id="t_14" lemma="het" morphofeat="VNW(pers,pron,stan,red,3,ev,onz)" pos="det" type="close">
+      <span>
+        <!--Het-->
+        <target id="w15"/>
+      </span>
+    </term>
+    <term id="t_15" lemma="hangen" morphofeat="WW(pv,tgw,met-t)" pos="verb" type="open">
+      <span>
+        <!--hangt-->
+        <target id="w16"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.02558483" reference="eng-30-01943448-v" reftype="Synset" resource="ODWN">
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-01943448-v" resource="mcr"/>
+            <externalRef reference="fn:Travel" resource="fn"/>
+            <externalRef reference="mcr-class:0" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Motion" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Dynamic;Location" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:motion" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01835496-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Translocation" resource="eso"/>
+          </externalRef>
+        </externalRef>
+        <externalRef confidence="0.21609306" reference="odwn-10-108886703-v" reftype="Synset" resource="ODWN">
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-02485451-v" resource="mcr"/>
+            <externalRef reference="fn:Execution" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:0" resource="mcr-class"/>
+            <externalRef reference="mcr-class:military" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Killing" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Dynamic;Existence;Physical;social" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:social" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01323958-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Killing" resource="eso"/>
+            <externalRef reference="fn-pb-role:Executioner#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Executed#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Instrument" resource="fn-role"/>
+            <externalRef reference="fn-role:Result" resource="fn-role"/>
+          </externalRef>
+        </externalRef>
+        <externalRef confidence="0.057169132" reference="eng-30-01482075-v" reftype="Synset" resource="ODWN">
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-01482075-v" resource="mcr"/>
+            <externalRef reference="fn:Body_movement" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Dynamic;Location" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:contact" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01482075-v" resource="mcr-sense"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Body_part#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Addressee" resource="fn-role"/>
+            <externalRef reference="fn-role:Message" resource="fn-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-01482075-v" resource="mcr"/>
+            <externalRef reference="fn:Placing" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Dynamic;Location" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:contact" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01482075-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Placing" resource="eso"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Cause#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Theme#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Area#2" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Goal#2" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Agent#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Agent" resource="fn-role"/>
+            <externalRef reference="fn-role:Area" resource="fn-role"/>
+            <externalRef reference="fn-role:Theme" resource="fn-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-01482075-v" resource="mcr"/>
+            <externalRef reference="fn:Filling" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Dynamic;Location" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:contact" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01482075-v" resource="mcr-sense"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Theme#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Goal#2" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Agent" resource="fn-role"/>
+            <externalRef reference="fn-pb-role:Agent#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Goal" resource="fn-role"/>
+            <externalRef reference="fn-role:Theme" resource="fn-role"/>
+          </externalRef>
+        </externalRef>
+        <externalRef confidence="0.4052459" reference="odwn-10-105318659-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.11706594" reference="eng-30-01834485-v" reftype="Synset" resource="ODWN"/>
+        <externalRef confidence="0.062047526" reference="eng-30-01481360-v" reftype="Synset" resource="ODWN">
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-01481360-v" resource="mcr"/>
+            <externalRef reference="fn:Placing" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:0" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Motion" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Location;Physical" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:contact" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01340439-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Placing" resource="eso"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Cause#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Theme#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Area#2" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Goal#2" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Agent" resource="fn-role"/>
+            <externalRef reference="fn-role:Area" resource="fn-role"/>
+            <externalRef reference="fn-role:Theme" resource="fn-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-01481360-v" resource="mcr"/>
+            <externalRef reference="fn:Filling" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:0" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Motion" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Location;Physical" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:contact" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01340439-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Motion" resource="eso"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Theme#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Goal#2" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Agent" resource="fn-role"/>
+            <externalRef reference="fn-role:Goal" resource="fn-role"/>
+            <externalRef reference="fn-role:Theme" resource="fn-role"/>
+          </externalRef>
+        </externalRef>
+        <externalRef reference="eng-30-02227741-v" reftype="Synset" resource="ODWN">
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="fn:Firing" resource="fn"/>
+            <externalRef reference="fn-entry:terminate.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+            <externalRef reference="eso:LeavingAnOrganization" resource="eso"/>
+            <externalRef reference="fn-pb-role:Employer#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Reason#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Employee#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Means" resource="fn-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="fn:Activity_finish" resource="fn"/>
+            <externalRef reference="fn-entry:terminate.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Activity#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Means" resource="fn-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="fn:Killing" resource="fn"/>
+            <externalRef reference="fn-entry:terminate.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Killing" resource="eso"/>
+            <externalRef reference="fn-pb-role:Cause#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Killer#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Victim#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Instrument" resource="fn-role"/>
+            <externalRef reference="fn-role:Means" resource="fn-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="fn:Process_end" resource="fn"/>
+            <externalRef reference="fn-entry:end.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+            <externalRef reference="fn-pb-role:Process#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Last_subevent#2" resource="fn-pb-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="fn:Cause_to_end" resource="fn"/>
+            <externalRef reference="fn-entry:end.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Agent#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Means#2" resource="fn-pb-role"/>
+          </externalRef>
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-00352826-v" resource="mcr"/>
+            <externalRef reference="fn:Activity_stop" resource="fn"/>
+            <externalRef reference="fn-entry:terminate.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:1" resource="mcr-class"/>
+            <externalRef reference="mcr-class:factotum" resource="mcr-class"/>
+            <externalRef reference="mcr-class:IntentionalProcess;Process" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Cause;Dynamic;Existence" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:change" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-00126264-v" resource="mcr-sense"/>
+            <externalRef reference="eso:StoppingAnActivity" resource="eso"/>
+            <externalRef reference="fn-pb-role:Agent#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Activity#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Means#MNR" resource="fn-pb-role"/>
+          </externalRef>
+        </externalRef>
+        <externalRef reference="eng-30-02485451-v" reftype="Synset" resource="ODWN">
+          <externalRef reference="1.2" resource="predicate-matrix">
+            <externalRef reference="mcr:ili-30-02485451-v" resource="mcr"/>
+            <externalRef reference="fn:Execution" resource="fn"/>
+            <externalRef reference="fn-entry:hang.v" resource="fn-entry"/>
+            <externalRef reference="mcr-class:0" resource="mcr-class"/>
+            <externalRef reference="mcr-class:military" resource="mcr-class"/>
+            <externalRef reference="mcr-class:Killing" resource="mcr-class"/>
+            <externalRef reference="mcr-class:BoundedEvent;Cause;Dynamic;Existence;Physical;social" resource="mcr-class"/>
+            <externalRef reference="mcr-sumo:social" resource="mcr-sumo"/>
+            <externalRef reference="mcr-sense:ili-30-01323958-v" resource="mcr-sense"/>
+            <externalRef reference="eso:Killing" resource="eso"/>
+            <externalRef reference="fn-pb-role:Executioner#0" resource="fn-pb-role"/>
+            <externalRef reference="fn-pb-role:Executed#1" resource="fn-pb-role"/>
+            <externalRef reference="fn-role:Instrument" resource="fn-role"/>
+            <externalRef reference="fn-role:Result" resource="fn-role"/>
+          </externalRef>
+        </externalRef>
+      </externalReferences>
+    </term>
+    <term id="t_16" lemma="in" morphofeat="VZ(init)" pos="prep" type="close">
+      <span>
+        <!--in-->
+        <target id="w17"/>
+      </span>
+    </term>
+    <term id="t_17" lemma="het" morphofeat="LID(bep,stan,evon)" pos="det" type="close">
+      <span>
+        <!--het-->
+        <target id="w18"/>
+      </span>
+    </term>
+    <term id="t_18" lemma="Louvre" morphofeat="N(eigen,ev,basis,onz,stan)" pos="name" type="open">
+      <span>
+        <!--Louvre-->
+        <target id="w19"/>
+      </span>
+    </term>
+    <term id="t_19" lemma="in" morphofeat="VZ(init)" pos="prep" type="close">
+      <span>
+        <!--in-->
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t_20" lemma="Parijs" morphofeat="N(eigen,ev,basis,onz,stan)" pos="name" type="open">
+      <span>
+        <!--Parijs-->
+        <target id="w21"/>
+      </span>
+    </term>
+    <term id="t_21" lemma="." morphofeat="LET()" pos="punct" type="open">
+      <span>
+        <!--.-->
+        <target id="w22"/>
+      </span>
+    </term>
+  </terms>
+  <deps>
+    <!--hd/su(is,Mona)-->
+    <dep from="t_3" rfunc="hd/su" to="t_1"/>
+    <!--mwp/mwp(Mona,Lisa)-->
+    <dep from="t_1" rfunc="mwp/mwp" to="t_2"/>
+    <!--hd/det(Mona,De)-->
+    <dep from="t_1" rfunc="hd/det" to="t_0"/>
+    <!--hd/predc(is,olieverfschilderij)-->
+    <dep from="t_3" rfunc="hd/predc" to="t_7"/>
+    <!--hd/det(olieverfschilderij,een)-->
+    <dep from="t_7" rfunc="hd/det" to="t_4"/>
+    <!--hd/mod(olieverfschilderij,16de)-->
+    <dep from="t_7" rfunc="hd/mod" to="t_5"/>
+    <!--mwp/mwp(16de,eeuws)-->
+    <dep from="t_5" rfunc="mwp/mwp" to="t_6"/>
+    <!--hd/mod(olieverfschilderij,gecreëerd)-->
+    <dep from="t_7" rfunc="hd/mod" to="t_8"/>
+    <!--hd/mod(gecreëerd,door)-->
+    <dep from="t_8" rfunc="hd/mod" to="t_9"/>
+    <!--hd/obj1(door,Leonardo)-->
+    <dep from="t_9" rfunc="hd/obj1" to="t_10"/>
+    <!--mwp/mwp(Leonardo,da)-->
+    <dep from="t_10" rfunc="mwp/mwp" to="t_11"/>
+    <!--mwp/mwp(Leonardo,Vinci)-->
+    <dep from="t_10" rfunc="mwp/mwp" to="t_12"/>
+    <!--- - / - -(is,.)-->
+    <dep from="t_3" rfunc="-- / --" to="t_13"/>
+    <!--hd/su(hangt,Het)-->
+    <dep from="t_15" rfunc="hd/su" to="t_14"/>
+    <!--hd/ld(hangt,in)-->
+    <dep from="t_15" rfunc="hd/ld" to="t_16"/>
+    <!--hd/obj1(in,Louvre)-->
+    <dep from="t_16" rfunc="hd/obj1" to="t_18"/>
+    <!--hd/det(Louvre,het)-->
+    <dep from="t_18" rfunc="hd/det" to="t_17"/>
+    <!--hd/mod(Louvre,in)-->
+    <dep from="t_18" rfunc="hd/mod" to="t_19"/>
+    <!--hd/obj1(in,Parijs)-->
+    <dep from="t_19" rfunc="hd/obj1" to="t_20"/>
+    <!--- - / - -(hangt,.)-->
+    <dep from="t_15" rfunc="-- / --" to="t_21"/>
+  </deps>
+  <opinions>
+    <opinion id="o1">
+      <opinion_target>
+        <span>
+          <!--een-->
+          <target id="t_4"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <!--16de-->
+          <target id="t_5"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o2">
+      <opinion_target>
+        <span>
+          <!--olieverfschilderij gecreëerd door-->
+          <target id="t_7"/>
+          <target id="t_8"/>
+          <target id="t_9"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <!--gecreëerd-->
+          <target id="t_8"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o3">
+      <opinion_target>
+        <span>
+          <!--door Leonardo-->
+          <target id="t_9"/>
+          <target id="t_10"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <!--Leonardo-->
+          <target id="t_10"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o4">
+      <opinion_target>
+        <span>
+          <!--da Vinci-->
+          <target id="t_11"/>
+          <target id="t_12"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <!--Vinci-->
+          <target id="t_12"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o5">
+      <opinion_holder>
+        <span>
+          <!--in-->
+          <target id="t_16"/>
+        </span>
+      </opinion_holder>
+      <opinion_target>
+        <span>
+          <!--Het hangt in-->
+          <target id="t_14"/>
+          <target id="t_15"/>
+          <target id="t_16"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="positive" strength="1">
+        <span>
+          <!--het Louvre in Parijs-->
+          <target id="t_17"/>
+          <target id="t_18"/>
+          <target id="t_19"/>
+          <target id="t_20"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+  </opinions>
+  <entities>
+    <entity id="e1" type="PER">
+      <references>
+        <span>
+          <!--Mona Lisa-->
+          <target id="t_1"/>
+          <target id="t_2"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://nl.dbpedia.org/resource/Mona_Lisa" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Mona_Lisa" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+        <externalRef confidence="1.0364176E-12" reference="http://nl.dbpedia.org/resource/Mona_Lisa_(band)" reftype="nl" resource="spotlight_v1" source="nl"/>
+        <externalRef confidence="1.5014253E-16" reference="http://nl.dbpedia.org/resource/Lijst_van_personages_uit_Teenage_Mutant_Ninja_Turtles" reftype="nl" resource="spotlight_v1" source="nl"/>
+      </externalReferences>
+    </entity>
+    <entity id="e2" type="PER">
+      <references>
+        <span>
+          <!--Leonardo da Vinci-->
+          <target id="t_10"/>
+          <target id="t_11"/>
+          <target id="t_12"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://nl.dbpedia.org/resource/Leonardo_da_Vinci" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Leonardo_da_Vinci" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+        <externalRef confidence="5.681958E-14" reference="http://nl.dbpedia.org/resource/Leonardo_da_Vinci_(trein)" reftype="nl" resource="spotlight_v1" source="nl"/>
+      </externalReferences>
+    </entity>
+    <entity id="e3" type="ORG">
+      <references>
+        <span>
+          <!--Louvre-->
+          <target id="t_18"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://nl.dbpedia.org/resource/Louvre" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="1.0" reference="http://dbpedia.org/resource/The_Louvre" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+      </externalReferences>
+    </entity>
+    <entity id="e4" type="LOC">
+      <references>
+        <span>
+          <!--Parijs-->
+          <target id="t_20"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9999985" reference="http://nl.dbpedia.org/resource/Parijs" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="0.9999985" reference="http://dbpedia.org/resource/Paris" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+        <externalRef confidence="1.4764405E-6" reference="http://nl.dbpedia.org/resource/Universiteit_van_Parijs" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="1.4764405E-6" reference="http://dbpedia.org/resource/University_of_Paris" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+        <externalRef confidence="7.0604345E-9" reference="http://nl.dbpedia.org/resource/Gare_du_Nord_(Parijs)" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="7.0604345E-9" reference="http://dbpedia.org/resource/Gare_du_Nord" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+        <externalRef confidence="4.496787E-9" reference="http://nl.dbpedia.org/resource/Station_Paris_Est" reftype="nl" resource="spotlight_v1" source="nl">
+          <externalRef confidence="4.496787E-9" reference="http://dbpedia.org/resource/Gare_de_Paris-Est" reftype="en" resource="wikipedia-db-nlEn" source="nl"/>
+        </externalRef>
+      </externalReferences>
+    </entity>
+  </entities>
+  <coreferences>
+    <coref id="coevent1" type="event">
+      <span>
+        <!--gecreëerd-->
+        <target id="t_8"/>
+      </span>
+    </coref>
+    <coref id="coevent2" type="event">
+      <span>
+        <!--is-->
+        <target id="t_3"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="eng-30-02702508-v" resource="ODWN" source="dominant_sense"/>
+        <externalRef reference="eng-30-13275847-n" resource="ODWN-ORBN-LMF-1.2" source="hypernym"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent3" type="event">
+      <span>
+        <!--hangt-->
+        <target id="t_15"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="odwn-10-105318659-v" resource="ODWN" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+  </coreferences>
+  <constituency>
+    <tree>
+      <t id="ter0">
+        <!--De-->
+        <span>
+          <target id="t_0"/>
+        </span>
+      </t>
+      <t id="ter1">
+        <!--Mona-->
+        <span>
+          <target id="t_1"/>
+        </span>
+      </t>
+      <t id="ter2">
+        <!--Lisa-->
+        <span>
+          <target id="t_2"/>
+        </span>
+      </t>
+      <t id="ter3">
+        <!--is-->
+        <span>
+          <target id="t_3"/>
+        </span>
+      </t>
+      <t id="ter4">
+        <!--een-->
+        <span>
+          <target id="t_4"/>
+        </span>
+      </t>
+      <t id="ter5">
+        <!--16de-->
+        <span>
+          <target id="t_5"/>
+        </span>
+      </t>
+      <t id="ter6">
+        <!--eeuws-->
+        <span>
+          <target id="t_6"/>
+        </span>
+      </t>
+      <t id="ter7">
+        <!--olieverfschilderij-->
+        <span>
+          <target id="t_7"/>
+        </span>
+      </t>
+      <t id="ter8">
+        <!--gecreëerd-->
+        <span>
+          <target id="t_8"/>
+        </span>
+      </t>
+      <t id="ter9">
+        <!--door-->
+        <span>
+          <target id="t_9"/>
+        </span>
+      </t>
+      <t id="ter10">
+        <!--Leonardo-->
+        <span>
+          <target id="t_10"/>
+        </span>
+      </t>
+      <t id="ter11">
+        <!--da-->
+        <span>
+          <target id="t_11"/>
+        </span>
+      </t>
+      <t id="ter12">
+        <!--Vinci-->
+        <span>
+          <target id="t_12"/>
+        </span>
+      </t>
+      <t id="ter13">
+        <!--.-->
+        <span>
+          <target id="t_13"/>
+        </span>
+      </t>
+      <nt id="nter0" label="top"/>
+      <nt id="nter1" label="smain"/>
+      <nt id="nter2" label="np"/>
+      <nt id="nter3" label="det"/>
+      <nt id="nter4" label="mwu"/>
+      <nt id="nter5" label="name"/>
+      <nt id="nter6" label="name"/>
+      <nt id="nter7" label="verb"/>
+      <nt id="nter8" label="np"/>
+      <nt id="nter9" label="det"/>
+      <nt id="nter10" label="mwu"/>
+      <nt id="nter11" label="adj"/>
+      <nt id="nter12" label="adj"/>
+      <nt id="nter13" label="noun"/>
+      <nt id="nter14" label="ppart"/>
+      <nt id="nter15" label="adj"/>
+      <nt id="nter16" label="pp"/>
+      <nt id="nter17" label="prep"/>
+      <nt id="nter18" label="mwu"/>
+      <nt id="nter19" label="name"/>
+      <nt id="nter20" label="name"/>
+      <nt id="nter21" label="name"/>
+      <nt id="nter22" label="punct"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
+      <edge from="nter2" id="tre1" to="nter1"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
+      <edge from="ter0" id="tre3" to="nter3"/>
+      <edge from="nter4" id="tre4" to="nter2"/>
+      <edge from="nter5" id="tre5" to="nter4"/>
+      <edge from="ter1" id="tre6" to="nter5"/>
+      <edge from="nter6" id="tre7" to="nter4"/>
+      <edge from="ter2" id="tre8" to="nter6"/>
+      <edge from="nter7" head="yes" id="tre9" to="nter1"/>
+      <edge from="ter3" id="tre10" to="nter7"/>
+      <edge from="nter8" id="tre11" to="nter1"/>
+      <edge from="nter9" id="tre12" to="nter8"/>
+      <edge from="ter4" id="tre13" to="nter9"/>
+      <edge from="nter10" id="tre14" to="nter8"/>
+      <edge from="nter11" id="tre15" to="nter10"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
+      <edge from="nter12" id="tre17" to="nter10"/>
+      <edge from="ter6" id="tre18" to="nter12"/>
+      <edge from="nter13" head="yes" id="tre19" to="nter8"/>
+      <edge from="ter7" id="tre20" to="nter13"/>
+      <edge from="nter14" id="tre21" to="nter8"/>
+      <edge from="nter15" head="yes" id="tre22" to="nter14"/>
+      <edge from="ter8" id="tre23" to="nter15"/>
+      <edge from="nter16" id="tre24" to="nter14"/>
+      <edge from="nter17" head="yes" id="tre25" to="nter16"/>
+      <edge from="ter9" id="tre26" to="nter17"/>
+      <edge from="nter18" id="tre27" to="nter16"/>
+      <edge from="nter19" id="tre28" to="nter18"/>
+      <edge from="ter10" id="tre29" to="nter19"/>
+      <edge from="nter20" id="tre30" to="nter18"/>
+      <edge from="ter11" id="tre31" to="nter20"/>
+      <edge from="nter21" id="tre32" to="nter18"/>
+      <edge from="ter12" id="tre33" to="nter21"/>
+      <edge from="nter22" id="tre34" to="nter0"/>
+      <edge from="ter13" id="tre35" to="nter22"/>
+    </tree>
+    <tree>
+      <t id="ter14">
+        <!--Het-->
+        <span>
+          <target id="t_14"/>
+        </span>
+      </t>
+      <t id="ter15">
+        <!--hangt-->
+        <span>
+          <target id="t_15"/>
+        </span>
+      </t>
+      <t id="ter16">
+        <!--in-->
+        <span>
+          <target id="t_16"/>
+        </span>
+      </t>
+      <t id="ter17">
+        <!--het-->
+        <span>
+          <target id="t_17"/>
+        </span>
+      </t>
+      <t id="ter18">
+        <!--Louvre-->
+        <span>
+          <target id="t_18"/>
+        </span>
+      </t>
+      <t id="ter19">
+        <!--in-->
+        <span>
+          <target id="t_19"/>
+        </span>
+      </t>
+      <t id="ter20">
+        <!--Parijs-->
+        <span>
+          <target id="t_20"/>
+        </span>
+      </t>
+      <t id="ter21">
+        <!--.-->
+        <span>
+          <target id="t_21"/>
+        </span>
+      </t>
+      <nt id="nter23" label="top"/>
+      <nt id="nter24" label="smain"/>
+      <nt id="nter25" label="det"/>
+      <nt id="nter26" label="verb"/>
+      <nt id="nter27" label="pp"/>
+      <nt id="nter28" label="prep"/>
+      <nt id="nter29" label="np"/>
+      <nt id="nter30" label="det"/>
+      <nt id="nter31" label="name"/>
+      <nt id="nter32" label="pp"/>
+      <nt id="nter33" label="prep"/>
+      <nt id="nter34" label="name"/>
+      <nt id="nter35" label="punct"/>
+      <edge from="nter24" id="tre36" to="nter23"/>
+      <edge from="nter25" id="tre37" to="nter24"/>
+      <edge from="ter14" id="tre38" to="nter25"/>
+      <edge from="nter26" head="yes" id="tre39" to="nter24"/>
+      <edge from="ter15" id="tre40" to="nter26"/>
+      <edge from="nter27" id="tre41" to="nter24"/>
+      <edge from="nter28" head="yes" id="tre42" to="nter27"/>
+      <edge from="ter16" id="tre43" to="nter28"/>
+      <edge from="nter29" id="tre44" to="nter27"/>
+      <edge from="nter30" id="tre45" to="nter29"/>
+      <edge from="ter17" id="tre46" to="nter30"/>
+      <edge from="nter31" head="yes" id="tre47" to="nter29"/>
+      <edge from="ter18" id="tre48" to="nter31"/>
+      <edge from="nter32" id="tre49" to="nter29"/>
+      <edge from="nter33" head="yes" id="tre50" to="nter32"/>
+      <edge from="ter19" id="tre51" to="nter33"/>
+      <edge from="nter34" id="tre52" to="nter32"/>
+      <edge from="ter20" id="tre53" to="nter34"/>
+      <edge from="nter35" id="tre54" to="nter23"/>
+      <edge from="ter21" id="tre55" to="nter35"/>
+    </tree>
+  </constituency>
+  <srl>
+    <predicate id="pr1">
+      <!--gecreëerd-->
+      <span>
+        <target id="t_8"/>
+      </span>
+      <role id="r1" semRole="ArgM-CAU">
+        <!--door Leonardo da Vinci-->
+        <span>
+          <target head="yes" id="t_9"/>
+          <target id="t_10"/>
+          <target id="t_11"/>
+          <target id="t_12"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr2">
+      <!--is-->
+      <externalReferences>
+        <externalRef confidence="0.012300172" reference="eng-30-02603699-v" resource="ODWN"/>
+      </externalReferences>
+      <span>
+        <target id="t_3"/>
+      </span>
+      <role id="r2" semRole="#">
+        <!--een 16de eeuws olieverfschilderij gecreëerd door Leonardo da Vinci-->
+        <span>
+          <target id="t_4"/>
+          <target id="t_5"/>
+          <target id="t_6"/>
+          <target head="yes" id="t_7"/>
+          <target id="t_8"/>
+          <target id="t_9"/>
+          <target id="t_10"/>
+          <target id="t_11"/>
+          <target id="t_12"/>
+        </span>
+      </role>
+      <role id="r4" semRole="#">
+        <!--De Mona Lisa-->
+        <span>
+          <target id="t_0"/>
+          <target head="yes" id="t_1"/>
+          <target id="t_2"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr3">
+      <!--hangt-->
+      <externalReferences>
+        <externalRef confidence="0.21609306" reference="Execution" resource="FrameNet"/>
+        <externalRef confidence="0.21609306" reference="odwn-10-108886703-v" resource="ODWN"/>
+        <externalRef reference="ili-30-02485451-v" resource="WordNet"/>
+        <externalRef reference="Killing" resource="ESO"/>
+        <externalRef confidence="0.119216658" reference="Placing" resource="FrameNet"/>
+        <externalRef confidence="0.057169132" reference="eng-30-01482075-v" resource="ODWN"/>
+        <externalRef reference="ili-30-01482075-v" resource="WordNet"/>
+        <externalRef confidence="0.062047526" reference="eng-30-01481360-v" resource="ODWN"/>
+        <externalRef reference="ili-30-01481360-v" resource="WordNet"/>
+        <externalRef confidence="0.119216658" reference="Filling" resource="FrameNet"/>
+        <externalRef reference="Motion" resource="ESO"/>
+      </externalReferences>
+      <span>
+        <target id="t_15"/>
+      </span>
+      <role id="r3" semRole="A2">
+        <!--in het Louvre in Parijs-->
+        <externalReferences>
+          <externalRef reference="Placing@Area" resource="FrameNet"/>
+          <externalRef reference="Placing@Goal" resource="FrameNet"/>
+          <externalRef reference="Filling@Goal" resource="FrameNet"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t_16"/>
+          <target id="t_17"/>
+          <target id="t_18"/>
+          <target id="t_19"/>
+          <target id="t_20"/>
+        </span>
+      </role>
+      <role id="r5" semRole="A1">
+        <!--Het-->
+        <externalReferences>
+          <externalRef reference="Execution@Executed" resource="FrameNet"/>
+          <externalRef reference="Placing@Theme" resource="FrameNet"/>
+          <externalRef reference="Placing@Agent" resource="FrameNet"/>
+          <externalRef reference="Filling@Theme" resource="FrameNet"/>
+          <externalRef reference="Filling@Agent" resource="FrameNet"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t_14"/>
+        </span>
+      </role>
+    </predicate>
+  </srl>
+  <topics>
+    <topic confidence="0.13764047622680664" method="JEX" source="ixa-pipe-topic-nl">education</topic>
+    <topic confidence="0.10743808001279831" method="JEX" source="ixa-pipe-topic-nl">continuing education</topic>
+    <topic confidence="0.08606129139661789" method="JEX" source="ixa-pipe-topic-nl">education policy</topic>
+    <topic confidence="0.06679407507181168" method="JEX" source="ixa-pipe-topic-nl">young person</topic>
+    <topic confidence="0.04513747617602348" method="JEX" source="ixa-pipe-topic-nl">vocational training</topic>
+    <topic confidence="0.03830947354435921" method="JEX" source="ixa-pipe-topic-nl">cultural policy</topic>
+  </topics>
+</NAF>

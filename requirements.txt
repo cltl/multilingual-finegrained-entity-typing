@@ -1,0 +1,5 @@
+BeautifulSoup4>=4.6.0
+NLTK>=3.2.4
+Scikit-learn>=0.18.2
+fasttext>=0.8.3
+KafNafParserPy>=1.88

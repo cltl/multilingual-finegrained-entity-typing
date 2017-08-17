@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NAF xml:lang="es" version="v3">
+  <nafHeader>
+    <public publicId="nr_demo_text" uri="nr_demo_text" />
+    <linguisticProcessors layer="srl">
+      <lp name="ixa-pipe-srl-es" beginTimestamp="2017-08-17T18:29:00+0200" endTimestamp="2017-08-17T18:29:03+0200" version="1.0" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="text">
+      <lp name="ixa-pipe-tok-es" beginTimestamp="2017-08-17T18:28:40+0200" endTimestamp="2017-08-17T18:28:41+0200" version="1.8.4-5e2c806d7e8bc1e5e537c7137d1bf54e2aa8978c" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="coreferences">
+      <lp name="corefgraph-es" beginTimestamp="2017-08-17T16:29:00Z" endTimestamp="2017-08-17T16:29:00Z" version="0.8" hostname="newsreadervm_es" />
+      <lp name="vua-event-coref-intradoc-wn-sim" timestamp="2017-08-17T18:29:03+0200" beginTimestamp="2017-08-17T18:29:03+0200" endTimestamp="2017-08-17T18:29:04+0200" version="3.0" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="constituency">
+      <lp name="ixa-pipe-parse-es-parser-chunking" beginTimestamp="2017-08-17T18:28:41+0200" endTimestamp="2017-08-17T18:28:42+0200" version="1.1.2-e886de5435f2688ac31dcc980afc2a40b4002f86" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="terms">
+      <lp name="ixa-pipe-pos-es-perceptron-baseline-ancora-autodict01" beginTimestamp="2017-08-17T18:28:41+0200" endTimestamp="2017-08-17T18:28:41+0200" version="1.4.6-c39b626d01201fd03bd9a49ee68495ca5926a555" hostname="newsreadervm_es" />
+      <lp name="ukb" beginTimestamp="2017-08-17T16:28:51Z" endTimestamp="2017-08-17T16:28:56Z" version="2.0.51.ga7181dc" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="deps">
+      <lp name="ixa-pipe-srl-es" beginTimestamp="2017-08-17T18:29:00+0200" endTimestamp="2017-08-17T18:29:01+0200" version="1.0" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="entities">
+      <lp name="ixa-pipe-nerc-es-6-class-clusters-ancora" beginTimestamp="2017-08-17T18:28:51+0200" endTimestamp="2017-08-17T18:28:51+0200" version="1.5.4-ca02c931bc0b200ccdb8b5795a7552e4cc0d4802" hostname="newsreadervm_es" />
+      <lp name="ixa-pipe-ned-es" beginTimestamp="2017-08-17T18:28:56+0200" endTimestamp="2017-08-17T18:28:58+0200" version="1.1.5-a1787f2996ec90c6ef82356a971808c8b44227df" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="timeExpressions">
+      <lp name="ixa-pipe-heideltime-es" beginTimestamp="2017-08-17T18:28:42+0200" endTimestamp="2017-08-17T18:28:50+0200" version="1.0.4-397fe2051da6b86380e0aba89632703a25578d76" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="markables">
+      <lp name="ixa-pipe-wikify-es" beginTimestamp="2017-08-17T18:29:04+0200" endTimestamp="2017-08-17T18:29:06+0200" version="1.3.0-08c62529ac03fa9b0260b961a71365170e444ee8" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+    <linguisticProcessors layer="topics">
+      <lp name="ixa-pipe-topic-es" beginTimestamp="2017-08-17T18:29:06+0200" endTimestamp="2017-08-17T18:29:12+0200" version="1.0.3-e5736af6cd0dabc10434ad6dcdaa86ecf361896c" hostname="newsreadervm_es" />
+    </linguisticProcessors>
+  </nafHeader>
+  <raw><![CDATA[La Mona Lisa es una pintura al ?leo del siglo XVI creada por Leonardo da Vinci. Est? situado en el Louvre en Par?s.]]></raw>
+  <text>
+    <wf id="w1" offset="0" length="2" sent="1" para="1">La</wf>
+    <wf id="w2" offset="3" length="4" sent="1" para="1">Mona</wf>
+    <wf id="w3" offset="8" length="4" sent="1" para="1">Lisa</wf>
+    <wf id="w4" offset="13" length="2" sent="1" para="1">es</wf>
+    <wf id="w5" offset="16" length="3" sent="1" para="1">una</wf>
+    <wf id="w6" offset="20" length="7" sent="1" para="1">pintura</wf>
+    <wf id="w7" offset="28" length="2" sent="1" para="1">al</wf>
+    <wf id="w8" offset="31" length="4" sent="1" para="1">?leo</wf>
+    <wf id="w9" offset="36" length="3" sent="1" para="1">del</wf>
+    <wf id="w10" offset="40" length="5" sent="1" para="1">siglo</wf>
+    <wf id="w11" offset="46" length="3" sent="1" para="1">XVI</wf>
+    <wf id="w12" offset="50" length="6" sent="1" para="1">creada</wf>
+    <wf id="w13" offset="57" length="3" sent="1" para="1">por</wf>
+    <wf id="w14" offset="61" length="8" sent="1" para="1">Leonardo</wf>
+    <wf id="w15" offset="70" length="2" sent="1" para="1">da</wf>
+    <wf id="w16" offset="73" length="5" sent="1" para="1">Vinci</wf>
+    <wf id="w17" offset="78" length="1" sent="1" para="1">.</wf>
+    <wf id="w18" offset="80" length="4" sent="2" para="1">Est?</wf>
+    <wf id="w19" offset="85" length="7" sent="2" para="1">situado</wf>
+    <wf id="w20" offset="93" length="2" sent="2" para="1">en</wf>
+    <wf id="w21" offset="96" length="2" sent="2" para="1">el</wf>
+    <wf id="w22" offset="99" length="6" sent="2" para="1">Louvre</wf>
+    <wf id="w23" offset="106" length="2" sent="2" para="1">en</wf>
+    <wf id="w24" offset="109" length="5" sent="2" para="1">Par?s</wf>
+    <wf id="w25" offset="114" length="1" sent="2" para="1">.</wf>
+  </text>
+  <terms>
+    <!--La-->
+    <term id="t1" type="close" lemma="el" pos="D" morphofeat="DA0FS0">
+      <span>
+        <target id="w1" />
+      </span>
+    </term>
+    <!--Mona-->
+    <term id="t2" type="close" lemma="Mona" pos="R" morphofeat="NP00000">
+      <span>
+        <target id="w2" />
+      </span>
+    </term>
+    <!--Lisa-->
+    <term id="t3" type="close" lemma="Lisa" pos="R" morphofeat="NP00000">
+      <span>
+        <target id="w3" />
+      </span>
+    </term>
+    <!--es-->
+    <term id="t4" type="open" lemma="ser" pos="V" morphofeat="VSIP3S0">
+      <span>
+        <target id="w4" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02604760-v" confidence="0.50795" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02620587-v" confidence="0.49205" />
+      </externalReferences>
+    </term>
+    <!--una-->
+    <term id="t5" type="close" lemma="uno" pos="D" morphofeat="DI0FS0">
+      <span>
+        <target id="w5" />
+      </span>
+    </term>
+    <!--pintura-->
+    <term id="t6" type="open" lemma="pintura" pos="N" morphofeat="NCFS000">
+      <span>
+        <target id="w6" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-03876519-n" confidence="0.383573" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-03875218-n" confidence="0.34639" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-00936620-n" confidence="0.270037" />
+      </externalReferences>
+    </term>
+    <!--al-->
+    <term id="t7" type="close" lemma="al" pos="P" morphofeat="SPCMS">
+      <span>
+        <target id="w7" />
+      </span>
+    </term>
+    <!--?leo-->
+    <term id="t8" type="open" lemma="?leo" pos="N" morphofeat="NCMS000">
+      <span>
+        <target id="w8" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-03843092-n" confidence="1.0" />
+      </externalReferences>
+    </term>
+    <!--del-->
+    <term id="t9" type="close" lemma="del" pos="P" morphofeat="SPCMS">
+      <span>
+        <target id="w9" />
+      </span>
+    </term>
+    <!--siglo-->
+    <term id="t10" type="open" lemma="siglo" pos="N" morphofeat="NCMS000">
+      <span>
+        <target id="w10" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-15205532-n" confidence="1.0" />
+      </externalReferences>
+    </term>
+    <!--XVI-->
+    <term id="t11" type="close" lemma="XVI" pos="O" morphofeat="W">
+      <span>
+        <target id="w11" />
+      </span>
+    </term>
+    <!--creada-->
+    <term id="t12" type="open" lemma="creada" pos="G" morphofeat="AQ0FSP">
+      <span>
+        <target id="w12" />
+      </span>
+    </term>
+    <!--por-->
+    <term id="t13" type="close" lemma="por" pos="P" morphofeat="SPS00">
+      <span>
+        <target id="w13" />
+      </span>
+    </term>
+    <!--Leonardo-->
+    <term id="t14" type="close" lemma="Leonardo" pos="R" morphofeat="NP00000">
+      <span>
+        <target id="w14" />
+      </span>
+    </term>
+    <!--da-->
+    <term id="t15" type="open" lemma="dar" pos="V" morphofeat="VMIP3S0">
+      <span>
+        <target id="w15" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02199590-v" confidence="0.0781835" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-01733477-v" confidence="0.0779435" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02309165-v" confidence="0.076479" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02230772-v" confidence="0.0730798" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02200686-v" confidence="0.0717683" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02291708-v" confidence="0.0645007" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02343595-v" confidence="0.0598466" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-01060494-v" confidence="0.0593787" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02316868-v" confidence="0.0587993" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-01647672-v" confidence="0.0533901" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-01401115-v" confidence="0.0515777" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02325272-v" confidence="0.0506308" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02235842-v" confidence="0.0503534" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-01060746-v" confidence="0.0466147" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02686471-v" confidence="0.0461134" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-00923622-v" confidence="0.0455707" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02108791-v" confidence="0.0357698" />
+      </externalReferences>
+    </term>
+    <!--Vinci-->
+    <term id="t16" type="close" lemma="Vinci" pos="R" morphofeat="NP00000">
+      <span>
+        <target id="w16" />
+      </span>
+    </term>
+    <!--.-->
+    <term id="t17" type="close" lemma="." pos="O" morphofeat="FP">
+      <span>
+        <target id="w17" />
+      </span>
+    </term>
+    <!--Est?-->
+    <term id="t18" type="open" lemma="est?" pos="V" morphofeat="VMIP3S0">
+      <span>
+        <target id="w18" />
+      </span>
+    </term>
+    <!--situado-->
+    <term id="t19" type="open" lemma="situado" pos="G" morphofeat="AQ0MSP">
+      <span>
+        <target id="w19" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02126430-a" confidence="1.0" />
+      </externalReferences>
+    </term>
+    <!--en-->
+    <term id="t20" type="close" lemma="en" pos="P" morphofeat="SPS00">
+      <span>
+        <target id="w20" />
+      </span>
+    </term>
+    <!--el-->
+    <term id="t21" type="close" lemma="el" pos="D" morphofeat="DA0MS0">
+      <span>
+        <target id="w21" />
+      </span>
+    </term>
+    <!--Louvre-->
+    <term id="t22" type="close" lemma="Louvre" pos="R" morphofeat="NP00000">
+      <span>
+        <target id="w22" />
+      </span>
+    </term>
+    <!--en-->
+    <term id="t23" type="close" lemma="en" pos="P" morphofeat="SPS00">
+      <span>
+        <target id="w23" />
+      </span>
+    </term>
+    <!--Par?s-->
+    <term id="t24" type="close" lemma="Par?s" pos="R" morphofeat="NP00000">
+      <span>
+        <target id="w24" />
+      </span>
+    </term>
+    <!--.-->
+    <term id="t25" type="close" lemma="." pos="O" morphofeat="FP">
+      <span>
+        <target id="w25" />
+      </span>
+    </term>
+  </terms>
+  <markables>
+    <!--La Mona Lisa-->
+    <mark id="DBpedia" lemma="el Mona Lisa">
+      <span>
+        <target id="w1" />
+        <target id="w2" />
+        <target id="w3" />
+      </span>
+      <externalReferences>
+        <externalRef resource="spotlight_v0.7" reference="http://es.dbpedia.org/resource/La_Gioconda" confidence="1.0" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Mona_Lisa" confidence="1.0" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </mark>
+    <!--pintura-->
+    <mark id="DBpedia" lemma="pintura">
+      <span>
+        <target id="w6" />
+      </span>
+      <externalReferences>
+        <externalRef resource="spotlight_v0.7" reference="http://es.dbpedia.org/resource/Pintura" confidence="0.99883705" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Painting" confidence="0.99883705" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </mark>
+    <!--siglo XVI-->
+    <mark id="DBpedia" lemma="siglo XVI">
+      <span>
+        <target id="w10" />
+        <target id="w11" />
+      </span>
+      <externalReferences>
+        <externalRef resource="spotlight_v0.7" reference="http://es.dbpedia.org/resource/Siglo_XVI" confidence="0.9999996" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/16th_century" confidence="0.9999996" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </mark>
+    <!--Leonardo da Vinci-->
+    <mark id="DBpedia" lemma="Leonardo dar Vinci">
+      <span>
+        <target id="w14" />
+        <target id="w15" />
+        <target id="w16" />
+      </span>
+      <externalReferences>
+        <externalRef resource="spotlight_v0.7" reference="http://es.dbpedia.org/resource/Leonardo_da_Vinci" confidence="0.9999999" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Leonardo_da_Vinci" confidence="0.9999999" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </mark>
+    <!--Louvre-->
+    <mark id="DBpedia" lemma="Louvre">
+      <span>
+        <target id="w22" />
+      </span>
+      <externalReferences>
+        <externalRef resource="spotlight_v0.7" reference="http://es.dbpedia.org/resource/Museo_del_Louvre" confidence="0.99999714" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Musée_du_Louvre" confidence="0.99999714" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </mark>
+    <!--Par?s-->
+    <mark id="DBpedia" lemma="Par?s">
+      <span>
+        <target id="w24" />
+      </span>
+      <externalReferences>
+        <externalRef resource="spotlight_v0.7" reference="http://es.dbpedia.org/resource/Par_de_Francia" confidence="0.9936261" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Peerage_of_France" confidence="0.9936261" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </mark>
+  </markables>
+  <deps>
+    <!--spec(Mona, La)-->
+    <dep from="t2" to="t1" rfunc="spec" />
+    <!--suj(es, Mona)-->
+    <dep from="t4" to="t2" rfunc="suj" />
+    <!--sn(Mona, Lisa)-->
+    <dep from="t2" to="t3" rfunc="sn" />
+    <!--spec(pintura, una)-->
+    <dep from="t6" to="t5" rfunc="spec" />
+    <!--atr(es, pintura)-->
+    <dep from="t4" to="t6" rfunc="atr" />
+    <!--sp(pintura, al)-->
+    <dep from="t6" to="t7" rfunc="sp" />
+    <!--sn(al, ?leo)-->
+    <dep from="t7" to="t8" rfunc="sn" />
+    <!--sp(?leo, del)-->
+    <dep from="t8" to="t9" rfunc="sp" />
+    <!--sn(del, siglo)-->
+    <dep from="t9" to="t10" rfunc="sn" />
+    <!--sn(siglo, XVI)-->
+    <dep from="t10" to="t11" rfunc="sn" />
+    <!--S(pintura, creada)-->
+    <dep from="t6" to="t12" rfunc="S" />
+    <!--cag(creada, por)-->
+    <dep from="t12" to="t13" rfunc="cag" />
+    <!--sn(por, Leonardo)-->
+    <dep from="t13" to="t14" rfunc="sn" />
+    <!--S(pintura, da)-->
+    <dep from="t6" to="t15" rfunc="S" />
+    <!--cd(da, Vinci)-->
+    <dep from="t15" to="t16" rfunc="cd" />
+    <!--f(es, .)-->
+    <dep from="t4" to="t17" rfunc="f" />
+    <!--cpred(Est?, situado)-->
+    <dep from="t18" to="t19" rfunc="cpred" />
+    <!--cc(situado, en)-->
+    <dep from="t19" to="t20" rfunc="cc" />
+    <!--spec(Louvre, el)-->
+    <dep from="t22" to="t21" rfunc="spec" />
+    <!--sn(en, Louvre)-->
+    <dep from="t20" to="t22" rfunc="sn" />
+    <!--cc(situado, en)-->
+    <dep from="t19" to="t23" rfunc="cc" />
+    <!--sn(en, Par?s)-->
+    <dep from="t23" to="t24" rfunc="sn" />
+    <!--f(Est?, .)-->
+    <dep from="t18" to="t25" rfunc="f" />
+  </deps>
+  <entities>
+    <entity id="e1" type="LOC">
+      <references>
+        <!--Mona Lisa-->
+        <span>
+          <target id="t2" />
+          <target id="t3" />
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/La_Gioconda" confidence="1.0" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Mona_Lisa" confidence="1.0" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </entity>
+    <entity id="e2" type="DATE">
+      <references>
+        <!--siglo XVI-->
+        <span>
+          <target id="t10" />
+          <target id="t11" />
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Siglo_XVI" confidence="0.99999964" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/16th_century" confidence="0.99999964" reftype="en" source="es" />
+        </externalRef>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Siglo_XVI_a._C." confidence="3.4221708E-7" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/16th_century_BC" confidence="3.4221708E-7" reftype="en" source="es" />
+        </externalRef>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Siglo&amp;nbsp;XVI" confidence="1.5037573E-8" reftype="es" source="es" />
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Historia_de_la_gastronom?a_de_Espa?a" confidence="5.2601434E-9" reftype="es" source="es" />
+      </externalReferences>
+    </entity>
+    <entity id="e3" type="PER">
+      <references>
+        <!--Leonardo da Vinci-->
+        <span>
+          <target id="t14" />
+          <target id="t15" />
+          <target id="t16" />
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Leonardo_da_Vinci" confidence="0.99999994" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Leonardo_da_Vinci" confidence="0.99999994" reftype="en" source="es" />
+        </externalRef>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Programa_Leonardo_da_Vinci" confidence="2.1112863E-8" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Leonardo_da_Vinci_programme" confidence="2.1112863E-8" reftype="en" source="es" />
+        </externalRef>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Leda_y_el_cisne_(Leonardo)" confidence="1.34191165E-8" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Leda_and_the_Swan_(Leonardo)" confidence="1.34191165E-8" reftype="en" source="es" />
+        </externalRef>
+        <externalRef resource="spotlight_v1" reference="http://es.dbpedia.org/resource/Aeropuerto_de_Roma-Fiumicino" confidence="7.871449E-10" reftype="es" source="es">
+          <externalRef resource="wikipedia-db-esEn" reference="http://dbpedia.org/resource/Leonardo_da_Vinci?Fiumicino_Airport" confidence="7.871449E-10" reftype="en" source="es" />
+        </externalRef>
+      </externalReferences>
+    </entity>
+    <entity id="e4" type="LOC">
+      <references>
+        <!--Louvre en Par?s-->
+        <span>
+          <target id="t22" />
+          <target id="t23" />
+          <target id="t24" />
+        </span>
+      </references>
+    </entity>
+  </entities>
+  <coreferences>
+    <coref id="coevent1" type="event">
+      <!--es-->
+      <span>
+        <target id="t4" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02604760-v" confidence="1.0" source="dominant_sense" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02620587-v" confidence="0.9686977" source="dominant_sense" />
+      </externalReferences>
+    </coref>
+    <coref id="coevent2" type="event">
+      <!--da-->
+      <span>
+        <target id="t15" />
+      </span>
+      <externalReferences>
+        <externalRef resource="wn30sp.bin64" reference="ili-30-01733477-v" confidence="0.9969303" source="dominant_sense" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02200686-v" confidence="0.9179469" source="dominant_sense" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02309165-v" confidence="0.9781987" source="dominant_sense" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02199590-v" confidence="1.0" source="dominant_sense" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02230772-v" confidence="0.9347215" source="dominant_sense" />
+        <externalRef resource="wn30sp.bin64" reference="ili-30-02291708-v" confidence="0.8249912" source="dominant_sense" />
+      </externalReferences>
+    </coref>
+  </coreferences>
+  <timeExpressions>
+    <timex3 id="tmx1" type="DATE" functionInDocument="CREATION_TIME" value="2017-08-17" />
+    <timex3 id="tmx2" type="DATE" value="15">
+      <!--del siglo XVI-->
+      <span>
+        <target id="w9" />
+        <target id="w10" />
+        <target id="w11" />
+      </span>
+    </timex3>
+  </timeExpressions>
+  <srl>
+    <!--t4 es : arg1[t1 La] arg2[t5 una]-->
+    <predicate id="pr1">
+      <!--es-->
+      <span>
+        <target id="t4" />
+      </span>
+      <externalReferences>
+        <externalRef resource="AnCora" reference="ser.1.benefactive" />
+      </externalReferences>
+      <role id="rl1" semRole="arg1">
+        <!--La Mona Lisa-->
+        <span>
+          <target id="t1" />
+          <target id="t2" head="yes" />
+          <target id="t3" />
+        </span>
+      </role>
+      <role id="rl2" semRole="arg2">
+        <!--una pintura al ?leo del siglo XVI creada por Leonardo da Vinci-->
+        <span>
+          <target id="t5" />
+          <target id="t6" head="yes" />
+          <target id="t7" />
+          <target id="t8" />
+          <target id="t9" />
+          <target id="t10" />
+          <target id="t11" />
+          <target id="t12" />
+          <target id="t13" />
+          <target id="t14" />
+          <target id="t15" />
+          <target id="t16" />
+        </span>
+      </role>
+    </predicate>
+    <!--t15 da : arg1[t16 Vinci]-->
+    <predicate id="pr2">
+      <!--da-->
+      <span>
+        <target id="t15" />
+      </span>
+      <externalReferences>
+        <externalRef resource="AnCora" reference="dar.62.default" />
+      </externalReferences>
+      <role id="rl3" semRole="arg1">
+        <!--Vinci-->
+        <span>
+          <target id="t16" head="yes" />
+        </span>
+      </role>
+    </predicate>
+  </srl>
+  <constituency>
+    <tree>
+      <!--Non-terminals-->
+      <nt id="nter1" label="TOP" />
+      <nt id="nter2" label="SENTENCE" />
+      <nt id="nter3" label="SN" />
+      <nt id="nter4" label="DA0FS0" />
+      <nt id="nter5" label="GRUP.NOM" />
+      <nt id="nter6" label="NP00000" />
+      <nt id="nter7" label="SN" />
+      <nt id="nter8" label="GRUP.NOM" />
+      <nt id="nter9" label="NP0000L" />
+      <nt id="nter10" label="GRUP.VERB" />
+      <nt id="nter11" label="VSIP3S0" />
+      <nt id="nter12" label="SN" />
+      <nt id="nter13" label="DI0FS0" />
+      <nt id="nter14" label="GRUP.NOM" />
+      <nt id="nter15" label="NCFS000" />
+      <nt id="nter16" label="SP" />
+      <nt id="nter17" label="PREP" />
+      <nt id="nter18" label="SPCMS" />
+      <nt id="nter19" label="SN" />
+      <nt id="nter20" label="GRUP.NOM" />
+      <nt id="nter21" label="NCMS000" />
+      <nt id="nter22" label="SP" />
+      <nt id="nter23" label="PREP" />
+      <nt id="nter24" label="SPCMS" />
+      <nt id="nter25" label="SN" />
+      <nt id="nter26" label="GRUP.NOM" />
+      <nt id="nter27" label="NCMS000" />
+      <nt id="nter28" label="SN" />
+      <nt id="nter29" label="GRUP.NOM" />
+      <nt id="nter30" label="NP00000" />
+      <nt id="nter31" label="S" />
+      <nt id="nter32" label="PARTICIPI" />
+      <nt id="nter33" label="AQ0FSP" />
+      <nt id="nter34" label="SP" />
+      <nt id="nter35" label="PREP" />
+      <nt id="nter36" label="SPS00" />
+      <nt id="nter37" label="SN" />
+      <nt id="nter38" label="GRUP.NOM" />
+      <nt id="nter39" label="NP00000" />
+      <nt id="nter40" label="GRUP.VERB" />
+      <nt id="nter41" label="VMIP3S0" />
+      <nt id="nter42" label="SN" />
+      <nt id="nter43" label="GRUP.NOM" />
+      <nt id="nter44" label="NP00000" />
+      <nt id="nter45" label="FP" />
+      <!--Terminals-->
+      <!--La-->
+      <t id="ter1">
+        <span>
+          <target id="t1" />
+        </span>
+      </t>
+      <!--Mona-->
+      <t id="ter2">
+        <span>
+          <target id="t2" />
+        </span>
+      </t>
+      <!--Lisa-->
+      <t id="ter3">
+        <span>
+          <target id="t3" />
+        </span>
+      </t>
+      <!--es-->
+      <t id="ter4">
+        <span>
+          <target id="t4" />
+        </span>
+      </t>
+      <!--una-->
+      <t id="ter5">
+        <span>
+          <target id="t5" />
+        </span>
+      </t>
+      <!--pintura-->
+      <t id="ter6">
+        <span>
+          <target id="t6" />
+        </span>
+      </t>
+      <!--al-->
+      <t id="ter7">
+        <span>
+          <target id="t7" />
+        </span>
+      </t>
+      <!--?leo-->
+      <t id="ter8">
+        <span>
+          <target id="t8" />
+        </span>
+      </t>
+      <!--del-->
+      <t id="ter9">
+        <span>
+          <target id="t9" />
+        </span>
+      </t>
+      <!--siglo-->
+      <t id="ter10">
+        <span>
+          <target id="t10" />
+        </span>
+      </t>
+      <!--XVI-->
+      <t id="ter11">
+        <span>
+          <target id="t11" />
+        </span>
+      </t>
+      <!--creada-->
+      <t id="ter12">
+        <span>
+          <target id="t12" />
+        </span>
+      </t>
+      <!--por-->
+      <t id="ter13">
+        <span>
+          <target id="t13" />
+        </span>
+      </t>
+      <!--Leonardo-->
+      <t id="ter14">
+        <span>
+          <target id="t14" />
+        </span>
+      </t>
+      <!--da-->
+      <t id="ter15">
+        <span>
+          <target id="t15" />
+        </span>
+      </t>
+      <!--Vinci-->
+      <t id="ter16">
+        <span>
+          <target id="t16" />
+        </span>
+      </t>
+      <!--.-->
+      <t id="ter17">
+        <span>
+          <target id="t17" />
+        </span>
+      </t>
+      <!--Tree edges-->
+      <edge id="tre2" from="nter2" to="nter1" head="yes" />
+      <edge id="tre3" from="nter3" to="nter2" />
+      <edge id="tre4" from="nter4" to="nter3" />
+      <edge id="tre5" from="ter1" to="nter4" />
+      <edge id="tre6" from="nter5" to="nter3" head="yes" />
+      <edge id="tre7" from="nter6" to="nter5" />
+      <edge id="tre8" from="ter2" to="nter6" />
+      <edge id="tre9" from="nter7" to="nter5" head="yes" />
+      <edge id="tre10" from="nter8" to="nter7" head="yes" />
+      <edge id="tre11" from="nter9" to="nter8" head="yes" />
+      <edge id="tre12" from="ter3" to="nter9" />
+      <edge id="tre13" from="nter10" to="nter2" />
+      <edge id="tre14" from="nter11" to="nter10" head="yes" />
+      <edge id="tre15" from="ter4" to="nter11" />
+      <edge id="tre16" from="nter12" to="nter2" head="yes" />
+      <edge id="tre17" from="nter13" to="nter12" />
+      <edge id="tre18" from="ter5" to="nter13" />
+      <edge id="tre19" from="nter14" to="nter12" head="yes" />
+      <edge id="tre20" from="nter15" to="nter14" head="yes" />
+      <edge id="tre21" from="ter6" to="nter15" />
+      <edge id="tre22" from="nter16" to="nter14" />
+      <edge id="tre23" from="nter17" to="nter16" head="yes" />
+      <edge id="tre24" from="nter18" to="nter17" head="yes" />
+      <edge id="tre25" from="ter7" to="nter18" />
+      <edge id="tre26" from="nter19" to="nter16" />
+      <edge id="tre27" from="nter20" to="nter19" head="yes" />
+      <edge id="tre28" from="nter21" to="nter20" head="yes" />
+      <edge id="tre29" from="ter8" to="nter21" />
+      <edge id="tre30" from="nter22" to="nter20" />
+      <edge id="tre31" from="nter23" to="nter22" head="yes" />
+      <edge id="tre32" from="nter24" to="nter23" head="yes" />
+      <edge id="tre33" from="ter9" to="nter24" />
+      <edge id="tre34" from="nter25" to="nter22" />
+      <edge id="tre35" from="nter26" to="nter25" head="yes" />
+      <edge id="tre36" from="nter27" to="nter26" head="yes" />
+      <edge id="tre37" from="ter10" to="nter27" />
+      <edge id="tre38" from="nter28" to="nter26" />
+      <edge id="tre39" from="nter29" to="nter28" head="yes" />
+      <edge id="tre40" from="nter30" to="nter29" head="yes" />
+      <edge id="tre41" from="ter11" to="nter30" />
+      <edge id="tre42" from="nter31" to="nter26" />
+      <edge id="tre43" from="nter32" to="nter31" />
+      <edge id="tre44" from="nter33" to="nter32" head="yes" />
+      <edge id="tre45" from="ter12" to="nter33" />
+      <edge id="tre46" from="nter34" to="nter31" />
+      <edge id="tre47" from="nter35" to="nter34" head="yes" />
+      <edge id="tre48" from="nter36" to="nter35" head="yes" />
+      <edge id="tre49" from="ter13" to="nter36" />
+      <edge id="tre50" from="nter37" to="nter34" />
+      <edge id="tre51" from="nter38" to="nter37" head="yes" />
+      <edge id="tre52" from="nter39" to="nter38" head="yes" />
+      <edge id="tre53" from="ter14" to="nter39" />
+      <edge id="tre54" from="nter40" to="nter31" />
+      <edge id="tre55" from="nter41" to="nter40" head="yes" />
+      <edge id="tre56" from="ter15" to="nter41" />
+      <edge id="tre57" from="nter42" to="nter31" head="yes" />
+      <edge id="tre58" from="nter43" to="nter42" head="yes" />
+      <edge id="tre59" from="nter44" to="nter43" head="yes" />
+      <edge id="tre60" from="ter16" to="nter44" />
+      <edge id="tre61" from="nter45" to="nter2" />
+      <edge id="tre62" from="ter17" to="nter45" />
+    </tree>
+    <tree>
+      <!--Non-terminals-->
+      <nt id="nter46" label="TOP" />
+      <nt id="nter47" label="SENTENCE" />
+      <nt id="nter48" label="GRUP.VERB" />
+      <nt id="nter49" label="VMIP3S0" />
+      <nt id="nter50" label="S" />
+      <nt id="nter51" label="PARTICIPI" />
+      <nt id="nter52" label="AQ0MSP" />
+      <nt id="nter53" label="SP" />
+      <nt id="nter54" label="PREP" />
+      <nt id="nter55" label="SPS00" />
+      <nt id="nter56" label="SN" />
+      <nt id="nter57" label="DA0MS0" />
+      <nt id="nter58" label="GRUP.NOM" />
+      <nt id="nter59" label="NP00000" />
+      <nt id="nter60" label="SP" />
+      <nt id="nter61" label="PREP" />
+      <nt id="nter62" label="SPS00" />
+      <nt id="nter63" label="SN" />
+      <nt id="nter64" label="GRUP.NOM" />
+      <nt id="nter65" label="NP00000" />
+      <nt id="nter66" label="FP" />
+      <!--Terminals-->
+      <!--Est?-->
+      <t id="ter18">
+        <span>
+          <target id="t18" />
+        </span>
+      </t>
+      <!--situado-->
+      <t id="ter19">
+        <span>
+          <target id="t19" />
+        </span>
+      </t>
+      <!--en-->
+      <t id="ter20">
+        <span>
+          <target id="t20" />
+        </span>
+      </t>
+      <!--el-->
+      <t id="ter21">
+        <span>
+          <target id="t21" />
+        </span>
+      </t>
+      <!--Louvre-->
+      <t id="ter22">
+        <span>
+          <target id="t22" />
+        </span>
+      </t>
+      <!--en-->
+      <t id="ter23">
+        <span>
+          <target id="t23" />
+        </span>
+      </t>
+      <!--Par?s-->
+      <t id="ter24">
+        <span>
+          <target id="t24" />
+        </span>
+      </t>
+      <!--.-->
+      <t id="ter25">
+        <span>
+          <target id="t25" />
+        </span>
+      </t>
+      <!--Tree edges-->
+      <edge id="tre64" from="nter47" to="nter46" head="yes" />
+      <edge id="tre65" from="nter48" to="nter47" />
+      <edge id="tre66" from="nter49" to="nter48" head="yes" />
+      <edge id="tre67" from="ter18" to="nter49" />
+      <edge id="tre68" from="nter50" to="nter47" head="yes" />
+      <edge id="tre69" from="nter51" to="nter50" />
+      <edge id="tre70" from="nter52" to="nter51" head="yes" />
+      <edge id="tre71" from="ter19" to="nter52" />
+      <edge id="tre72" from="nter53" to="nter50" />
+      <edge id="tre73" from="nter54" to="nter53" head="yes" />
+      <edge id="tre74" from="nter55" to="nter54" head="yes" />
+      <edge id="tre75" from="ter20" to="nter55" />
+      <edge id="tre76" from="nter56" to="nter53" />
+      <edge id="tre77" from="nter57" to="nter56" />
+      <edge id="tre78" from="ter21" to="nter57" />
+      <edge id="tre79" from="nter58" to="nter56" head="yes" />
+      <edge id="tre80" from="nter59" to="nter58" head="yes" />
+      <edge id="tre81" from="ter22" to="nter59" />
+      <edge id="tre82" from="nter60" to="nter50" head="yes" />
+      <edge id="tre83" from="nter61" to="nter60" head="yes" />
+      <edge id="tre84" from="nter62" to="nter61" head="yes" />
+      <edge id="tre85" from="ter23" to="nter62" />
+      <edge id="tre86" from="nter63" to="nter60" />
+      <edge id="tre87" from="nter64" to="nter63" head="yes" />
+      <edge id="tre88" from="nter65" to="nter64" head="yes" />
+      <edge id="tre89" from="ter24" to="nter65" />
+      <edge id="tre90" from="nter66" to="nter47" />
+      <edge id="tre91" from="ter25" to="nter66" />
+    </tree>
+  </constituency>
+  <topics>
+    <topic source="ixa-pipe-topic-es" method="JEX" confidence="0.12676256895065308">education</topic>
+    <topic source="ixa-pipe-topic-es" method="JEX" confidence="0.08612149208784103">education policy</topic>
+    <topic source="ixa-pipe-topic-es" method="JEX" confidence="0.050149694085121155">vocational training</topic>
+    <topic source="ixa-pipe-topic-es" method="JEX" confidence="0.03477105870842934">cultural policy</topic>
+    <topic source="ixa-pipe-topic-es" method="JEX" confidence="0.02708658017218113">Community programme</topic>
+    <topic source="ixa-pipe-topic-es" method="JEX" confidence="0.02307077869772911">action programme</topic>
+  </topics>
+</NAF>
